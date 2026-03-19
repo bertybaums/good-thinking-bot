@@ -1,0 +1,1012 @@
+PHIL 201 Critical Thinking
+Chapter 1
+1.1 What is an argument
+ Argument: set of premises that attempt to provide a reason that a conclusion is true
+Premises and conclusion are statements that can be true or false
+Exercise 1: Which of the following sentences are statements and which are not?
+No one understands me but you. 
+Alligators are on average larger than crocodiles. 
+Is an alligator a reptile or a mammal? 
+An alligator is either a reptile or a mammal. 
+Don’t let any reptiles into the house. 
+You may kill any reptile you see in the house. 
+East Africans are not the best distance runners. 
+Obama is not a Democrat. 
+Some humans have wings. 
+Some things with wings cannot fly. 
+Was Obama born in Kenya or Hawaii? 
+Oh no! A grizzly bear! 
+Meet me in St. Louis. 
+We met in St. Louis yesterday. 
+I do not want to meet a grizzly bear in the wild. 
+Standard Form: We make a sequence of statements, where the conclusion is the last one.
+1.2 Identifying Arguments
+Premise indicators: “because” “since” and other words that indicate a statement (conclusion) is based on some other statements (premises)
+Conclusion indicators: “so” “hence” “therefore”. But be careful: sometimes words like “since” have more than one meaning, e.g. time.
+Check: is the indicator word/phrase conjoining two or more statements, rather than modifying a phrase?
+Substitution test - can you substitute the indicator word with another indicator from this table?
+Exercise 1.2
+Exercise 2: Which of the following are arguments? If it is an argument, identify the conclusion of the argument.
+The woman in the hat is not a witch since witches have long noses and she doesn’t have a long nose. 
+I have been wrangling cattle since before you were old enough to tie your own shoes. 
+Albert is angry with me so he probably won’t be willing to help me wash the dishes. 
+First I washed the dishes and then I dried them. 
+If the road wasn’t icy, the car wouldn’t have slid off the turn. 
+Albert isn’t a fireman and he isn’t a fisher man either. 
+Are you seeing that rhinoceros over there? It is huge! 
+The fact that obesity has become a problem in the U.S. is shown by the  fact that obesity rates have risen significantly over the past four decades. 
+Bob showed me a graph with the rising obesity rates and I was very  surprised to see how much they’ve risen. 
+10.Albert isn’t a fireman because Albert is a Greyhound, which is a kind of dog, and dogs can’t be firemen.
+ 11.Charlie and Violet are dogs and since dogs don’t sweat, it is obvious that Charlie and Violet don’t sweat. 12.The reason I forgot to lock the door is that I was distracted by the clown
+riding a unicycle down our street while singing Lynyrd Skynyrd’s “Simple
+Man.” 13.What Bob told you is not the real reason that he missed his plane to
+Denver. 14.Samsung stole some of Apple’s patents for their smartphones, so Apple
+stole some of Samsung’s patents back in retaliation. 15.No one who has ever gotten frostbite while climbing K2 has survived to
+tell about it, therefore no one ever will.
+1.3 Arguments vs Explanations 
+Arguments try to convince that some conclusion is true. Explanations show why a conclusion is true. Explanations tend to presuppose that a conclusion is already taken for granted.
+1.4 More complex argument structures
+Main conclusion: a statement (conclusion) that depends on other statements, but other statements do not depend on it.
+Intermediate conclusion: a statement (conclusion) that depends on other states, and other statements (conclusion) depend on it. These statements can be both premises and conclusions.
+Similarly, we have main arguments and sub arguments.
+Example:
+1. The lava from Mt. Vesuvius was flowing too fast and there was nowhere for someone living in Pompeii to go in order to escape it in time. 
+2. Therefore, no one living in Pompeii could have survived the eruption of Mt. Vesuvius. (from 1) 
+3. Therefore, this account of the eruption of Mt. Vesuvius was not actually written by an eyewitness. (from 2)
+Another even more complex argument:
+1. Wanda arrived at work with her right pant leg rolled up. 
+2. Cyclists often roll up their right pant leg. 
+3. Bob saw Wanda riding her bike towards work at 7:45. 
+4. Therefore, Wanda rode her bike to work today. (from 1-2, 3  independently) 
+Diagrammatically: 
+Go through Exercise 4 
+
+1.5 Paraphrasing 
+ using different words to express the same idea, with the goal of making them clearer (for you, your audience, etc - there’s no single correct way, but lots of bad ways!).
+Not mentioned by author here: principle of charity - in your paraphrase, make sure to capture what you think is intended
+1.6 Validity
+A valid argument is an argument whose conclusion cannot possibly be false, assuming that the premises are true.
+1. Violet is a dog 2. Therefore, Violet is a mammal (from 1)
+1. EveryoneborninFrancecanspeakFrench 2. BarackObamawasborninFrance 3. Therefore, Barack Obama can speak French (from 1-2)
+Contrast these with invalid arguments (it’s possible for premises to be true, but the conclusion false, i.e. there are counterexamples): 
+1. GeorgewasPresidentoftheUnitedStates 2. Therefore, George was elected President of the United States (from 1)
+Informal test of validity - can you imagine a world where the argument is invalid? If yes: invalid. If such a world is impossible, then it is valid.
+Exercise 5: Determine whether or not the following arguments are valid by using the informal test of validity. If the argument is invalid, provide a counterexample.
+Katie is a human being. Therefore, Katie is smarter than a chimpanzee. 
+Bob is a fireman. Therefore, Bob has put out fires. 
+Gerald is a mathematics professor. Therefore, Gerald knows how to  teach mathematics. 
+Monica is a French teacher. Therefore, Monica knows how to teach  French. 
+Bob is taller than Susan. Susan is taller than Frankie. Therefore, Bob  is taller than Frankie. 
+Craig loves Linda. Linda loves Monique. Therefore, Craig loves  Monique. 
+Orel Hershizer is a Christian. Therefore, Orel Hershizer communicates  with God. 
+All Muslims pray to Allah. Muhammad is a Muslim. Therefore,  Muhammad prays to Allah. 
+Some protozoa are predators. No protozoa are animals. Therefore,  some predators are not animals. 
+10.Charlie only barks when he hears a burglar outside. Charlie is barking.
+Therefore, there must be a burglar outside.
+1.7 Soundness as
+validity + true premises
+1.8 Deductive vs Inductive Arguments 
+deductive: conclusion follows with absolute certainty
+inductive: the premises increase probability of conclusion
+defeasible arguments by adding further information to the premises
+Example: 1. Tweetsisahealthy,normallyfunctioningbird 2. Mosthealthy,normallyfunctioningbirdsfly 3. Therefore,Tweetsprobablyflies
+But if Tweets is 6ft tall and can run 30mph, it decreases the probability it flies.
+Weak vs strong inductive arguments
+Change “most” to “all” and you get a valid deductive argument, one that is not defeasible: 
+1. Tweetsisahealthy,normallyfunctionbird. 2. Allhealthy,normallyfunctioningbirdscanfly. 3. Therefore,Tweetscanfly.
+
+
+September 4 meeting - [We had no class on 2nd because of Labor day]
+1.9 Arguments with missing premises
+We already got into this. We adopted the convention to use * to indicate which premises we supplied.
+The principle of charity states that when reconstructing an argument, you should try to make that argument (whether inductive or deductive) as strong as possible.
+Example of an argument whose missing premises are not so easy to determine: 
+Since children who are raised by gay couples often have psychological and emotional problems, the state should discourage gay couples from raising children.
+1. Children who are raised by gay couples often have psychological and emotional problems.
+2. Therefore, the state should discourage gay couples from raising children.
+NOTE: The conclusion is a normative statement, but the premise is a descriptive statement.
+The is-ought gap. Any argument with a normative conclusion must have at least one normative premise.
+Above, we need this: Thestateshouldalwaysdowhatitcantodecreaseharmtochildren. 
+But IT’S STILL INVALID! 
+Counter example 1: The rate of psychological problems in children raised by gay couples is lower than those raised by heterosexual couples. In such a situation, the state should discourage heterosexual couples form raising children!
+Counter example 2: Confounding factors: it’s the not parents, but society’s bullying and lack of acceptance that cause the psychological problems.
+To get the argument to be valid, we need this: 
+By making an argument stronger so that it becomes valid, we see more clearly the assumptions on which an argument relies. 
+Other possible examples to go over: 
+
+1.10 Assuring, guarding, and discounting
+Rhetorical devices cut an argument short, sometimes appropriately (because a missing premise is sufficiently obvious and easy to fill in) and sometimes inappropriately.
+Examples of Assuring: 
+	Dentists agree…
+	Trust me…
+	Everyone knows that…
+Guarding:
+	Instead of “all” you can say “most”
+	Weaker claims are more likely to be true, stronger claims are less likely to be
+Discounting:
+Examples of discounting terms:
+1.11 Evaluative Language
+Descriptive language describes a state of affairs without judgment. Evaluative language passes some form of judgment, positive or negative.
+Bob is tall. “Tall” is purely descriptive.
+Bob is good. “Good” is purely evaluative. 
+Some terms are both evaluative and descriptive, e.g. “nosy”.
+Examples of evaluative terms: 
+Presupposition example: “Even Jane could pass”. What does “even” suggest?
+Presuppositions are difficult to challenge because they come across as something that everyone in the conversation has already taken for granted. It takes extra effort.
+[Bert’s own example of there’s always three responses to yes/no questions]
+Evaluative language often sneaks in as a presupposition.
+In rhetoric you’re interested in persuasion generally, so presuppositions aren’t necessarily bad, but in logic we do care a great deal because we are carefully analyzing and evaluating arguments, not the relation of persuasion.
+As a rhetorical technique, evaluative language is non-rational persuasion because reasons aren’t being given.
+Logic is a normative science, using validity as a mark of rational persuasion.
+
+1.12 Analyzing a real-life argument.
+ASSIGN THIS FOR HOMEWORK
+
+
+Chapter 2
+
+2.1 
+Informal tests of validity depend on our capacities to imagine counterexamples.
+This is neither precise nor objective.
+We want to make validity more objective and precise. This will make argument evaluation more objective.
+
+Example: Complex statements like conjunctions can be decomposed into simpler ones.
+	Conjunctions have a form: 1. A and B. 2. Therefore, A.
+
+
+2.2 Propositional logic and four basic truth functional connectives.
+
+“Proposition” just means “statement that is true or false”.
+
+Atomic propositions do not contain truth-functional connectives. Complex propositions do contain such connectives. 
+
+Conjunction is one kind of truth functional connective. Represented by a dot: p * q
+The information about how conjunctions form the truth value of the complex proposition is determined by a truth table.
+[explain truth table]
+
+Sometimes conjunctions are expressed by “and”. But sometimes “and” doesn’t express a conjunction. Moreover, other words can express conjunction, like…
+As previous discussion about rhetorical devices, these words carry more information than just conjunction, but they are all at least conjunctions. Even “and” can suggest temporal ordering.
+
+The dot symbol means all are are caring about is the conjunction logic, as determined by the truth table.
+
+Some examples to consider using: 
+
+
+2.3 Negation and disjunction
+
+Negation - “it’s not the case that”
+The truth table for negation is pretty simple. We use the symbol ~.
+
+What do you think something like this says? ~C * ~T
+
+
+Disjunction truth table. Let’s try to build it from an example: Ether buckle your seatbelt or get a ticket. What are the conditions under which it’s true? There are four possible conditions.
+
+Now here’s the truth table for disjunction. We use v. Notice this is inclusive (not exclusive).
+
+If we wanted to say “or” in an exclusive way, what would we need to do? What’s the condition we’re trying to rule out?
+
+Some possible examples to use: 
+
+
+
+
+2.4 Using Parentheses to translate complex sentences
+
+Main operator
+
+Compare: ~C * G with ~(C * G)
+
+The following is NOT WELL FORMED: F v C * ~D
+That’s because it’s ambiguous between F v (C * ~D) and (F v C) * ~D
+
+The main operator is signaled in English in various ways, e.g. “either …. or”
+
+Steps for translating English into our symbolic language:
+Examples 
+
+
+2.5 “Not both” and “neither nor”
+
+Compare:
+Carla will not have both cake and ice cream.
+Carla will have neither cake nor ice cream.
+
+Look at the “not both” conditions:
+“not both” is the negation of a conjunction: ~ (C * I)
+
+Note, ~ (p * q) is very different than ~p * q
+
+Now, look at “neither nor” conditions:
+
+The only circumstance it’s true is ~C and ~I. So, “neither nor” is a conjunction of two negations: ~ p * ~q
+
+Note: later we’ll show formally that this is equivalent to ~(p v q)
+
+Some examples: 
+
+
+
+
+2.6 The truth table test of validity
+
+Building a truth table using reference columns.
+Do the case of disjunctive syllogism:
+Convict escape through sewage pipes (S). Convict escaped by hiding in back of delivery van (D).
+
+Truth table test of validity: an argument is valid if and only if for every assignment of truth values where the premises are true, the conclusion is true. An argument is invalid if there exists an assignment (a row) where the premises are true, but the conclusion false.
+The TTTV is a formal method because we can assess validity even when we don’t know what an argument is about! For example (walk through this slowly): 
+
+
+—— (End of week Sep 9-13)
+
+2.7 Conditionals
+Example: If it is raining then the ground it wet.
+What are the two atomic sentences?
+A conditional is not asserting either atomic sentence. I’ve expressing a relationship between them.
+Antecedent (sufficient conditions), Consequent (necessary conditions), and the horseshoe symbol: R  G 
+Truth table for conditional
+Note:  R  G  is about conditions where it’s raining. You can’t show it’s false using counterexamples of sunny days!
+Another example: If you pass all the exams (E) then you pass the course (C).
+Some other ways of expressing a conditional: 
+It is raining only if the ground is wet The ground is wet if is raining Only if the ground is wet is it raining That it is raining implies that the ground is wet 
+That it is raining entails that the ground is wet 
+As long as it is raining, the ground will be wet 
+So long as it is raining, the ground will be wet 
+The ground is wet, provided that it is raining 
+Whenever it is raining, the ground is wet
+If it is raining, the ground is wet
+Examples (from Exercise 13):
+The Tigers will win only if the Indians lose their star pitcher. (T, I) 
+Tom will pass the class provided that he does all the homework. (P, H) 
+The car will run only if it has gas. (R, G) 
+The fact that you are asking me about your grade implies that you  care about your grade. (A, C) 
+Although Frog will swim without a bathing suit, Toad will swim only if  he is wearing a bathing suit. (F, T, B) 
+If Obama isn’t a U.S. citizen, then I’m a monkey’s uncle. (O, M) 
+If Toad wears his bathing suit, he doesn’t want Frog to see him in it.  (T, F) 
+If Tom doesn’t pass the exam, then he is either stupid or lazy. (P, S, L) 
+9. Bekele will win the race as long as he stays healthy. (W, H) 10.If Bekele is either sick or injured, he will not win the race. (S, I, W) 
+11.Bob will become president only if he runs a good campaign and doesn’t say anything stupid. (P, C, S) 12.If that plant has three leaves then it is poisonous. (T, P) 13.The fact that the plant is poisonous implies that it has three leaves. (T,P) 14.The plant is poisonous only if it has three leaves. (T, P) 15.The plant has three leaves if it is poisonous. (T, P) 16.Olga will swim in the open water as long as there is a shark net present. (O, N) 17.Olga will swim in the open water only if there is shark net. (O, N) 18.The fact that Olga is swimming implies that she is wearing a bathing suit. (O, B) 19.If Olga is in Nice, she does not wear a bathing suit. (N, B) 20.If Terrence pulls Philip’s finger, something bad will happen. (T, B)
+
+2.8 Unless
+The Leafs will win as long as their goalie isn’t injured.
+Read these as “if not”
+Show the equivalence to disjunction.
+
+2.9 Material Equivalence.
+Show the case of unless, one as a conditional “if not” and the other as a disjunction
+Show the Demorgan law 
+Exercise 14: Construct a truth table to determine whether the following pairs of statements are materially equivalent.
+A⊃Band~AvB 
+~(A⋅B) and ~A v ~B 
+A⊃B and ~B⊃~A 
+Av~BandB⊃A 
+B⊃AandA⊃B 
+~(A⊃B) and A⋅~B 
+AvBand~A⋅~B 
+Av(B⋅C)and(AvB)⋅(AvC) 
+(AvB)⋅CandAv(B⋅C) 
+10. ~(AvB)and~AvB
+
+2.10 Tautologies, contradictions, and contingent statements
+Tautology: true in virtue of its form.
+Contradiction: false in virtue of its form.
+Contingent statement: true/false depending on the way the world actually is.
+
+2.11 Proofs and 8 valid forms of inference
+Truth tables become unwieldy.
+Forms of inference (with the conditional):
+modus ponens
+Modus tollens
+hypothetical syllogism ( if p then q, if q then r, therefore if p then r)
+Forms of inference with conjunction, disjunction, and negation
+simplification (conjunction elim)
+Conjunction (conjunction intro)
+Disjunctive syllogism
+Addition (“or intro”)
+Final form of inference:
+Constructive dilemma (either p or q. if p, then r. if q then s. therefore, r or s).
+
+2.12 How to construct proofs
+Example: 
+
+
+
+Work “backwards” vs “forwards”
+
+
+
+More complex: 
+
+
+
+
+
+Exercises on p 112 (screenshot below)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2.14 Categorical Logic
+All human are mortal (H)
+All mortal things die (M)
+Therefore, all humans die. (D)
+The validity of this argument can’t be captured by propositional logic; the truth table method is misleading in that there seems to be a row that would be a counterexample. This is because it’s too coarse-grained. It looks at that propositional (sentential) level, not the more fine-grained level of categories.
+
+What we want is:
+All H are M.
+All M are D.
+Therefore, all H are D.
+
+Categorical logic uses Venn Diagrams to represent logical relationships between categories.
+
+
+
+
+
+
+
+There are four types of categorical statements:
+Universal affirmative: All S are P
+Universal negative: No S are P
+Particular affirmative: Some S are P
+Particular negative: Some S are not P
+
+Each of these can be represent in a Venn Diagram.
+
+Tricky cases:
+“Nobody loves me but my mother”
+The category can’t be “my mother” because that’s a particular thing. We are describing CATEGORIES OF THINGS.
+The translation is a bit odd, but it’s: All things that love me are things that are my mother.
+Some examples from Exercise 18: 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2.15 Venn Diagram test of validity for immediate categorical inferences
+If the Venn for the premise is the same as the Venn for the conclusion, then all the information in the conclusion is already contained in the premise, so it is valid.
+If the conclusion contains information that is not included in the premise, then the argument is invalid.
+Compare:
+Some S are P. Therefore, some P are S. (valid)
+All S are P. Therefore all P are S. (invalid)
+
+2.16 Universal statements and Existential commitment.
+All S are P.
+Therefore, some S are P.
+If valid, then “all” has “existential import” or makes an “existential commitment”.
+Modern logicians reject existential commitment. Why? Because there are laws we think are true but not because the relevant categories have particular instances.
+	Example: All trespassers will be fined. 
+		This universal affirmative can be true without there being trespassers.
+		This is very similar to how we treated conditional statements.
+
+2.17 Venn validity for categorical syllogisms.
+A categorical syllogism has two premises and one conclusion.
+We use three categories for a Venn to represent the two premises.
+We construct another two category Venn for the conclusion.
+Then ask: does the conclusion Venn contain any new information compared to the Venn for the premises? If not, then the Venn test is passed and the argument is valid.
+
+Do the Venn for this (valid):
+
+
+
+
+
+Then do the Venn for this (invalid):
+
+
+
+
+A tricky case:
+
+
+Here we have to put the asterix on the line to indicate that the particular is neither inside nor outside the category (we’re not making a commitment).
+So: 
+
+
+
+
+
+
+
+The conclusion contains more information than the premises, so the Venn test fails. The argument is invalid.
+Contrast this with:
+
+
+
+
+The first premise would require this: 
+
+
+
+
+
+But the second premise then forces us to make the choice:
+
+
+
+
+
+
+
+Exercise 21: Use Venn method to test syllogisms.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+DO THE BARNUM EFFECT EXERCISE after handing back test 2	
+Inductive arguments: roughly four kinds: statistical generalizations, IBEs, analogically, and causal
+3.1 Inductive arguments and statistical generalizations
+ inductive arguments are “defeasible,” meaning that we could turn a strong inductive argument into a weak inductive argument simply by adding further premises to the argument.
+Tweetsisahealthy,normallyfunctioningbird 
+Mosthealthy,normallyfunctioningbirdsfly 
+Therefore,Tweetsprobablyflies
+But if you add that Tweets is 6ft tall and can run 30mph, the conclusion is no longer as good of a bet.
+
+Premise 2 is a statistical generalization.
+Statistical generalizations are generalizations arrived at by empirical observations of certain regularities.
+Universal stat generalizaitons:
+Partial: (most or some)
+For example, consider the following inductive argument, whose premise is a (partial) statistical generalization:
+1. 70%ofvoterssaytheywillvoteforcandidateX 2. Therefore,candidateXwillprobablywintheelection
+
+Two conditions for a statistical generalization to be “good”: These are based on the idea of a “sample”, which is a portion of a population (the totality of members of objects/events, etc).
+ These conditions help towards a sample being representative of a population.
+Bert: since it’s election season, using a polling example.
+
+One commits the fallacy of hasty generalization when one infers a statistical generalization (either universal or partial) about a population from too few instances of that population. That is, the sample size is inadequate.
+A biased sample can happen even when there is adequate sample size.
+Random sampling is a method to avoid sampling biases - which individuals get selected is a matter of chance.
+
+Bias can also happen in questionnaires themselves. Example: 
+
+Exercise 22: identify problems (if any) in these statistical generalizations:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3.2 Inference to the best explanation and the seven explanatory virtues
+IBE have these components
+
+
+
+
+
+
+The following virtues make IBE’s “good” or “reasonable”
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3.3 Analogical arguments
+(After Subaru example - the name “Subaru” doesn’t matter, but rather the quality of the parts and assembly). What this illustrates is that better arguments from analogy will invoke more relevant similarities between the things being compared in the analogy. This is a key condition for any good argument from analogy: the similar characteristics between the two things cited in the premises must be relevant to the characteristic cited in the conclusion
+Example, of Trolley problem, with Bob choosing NOT to throw the switch because it would hit his expensive car, and a child getting run over by the train instead. Is this analogous with the regular UNNECESSARY purchase of $5 coffee/snack, when saving that money could save a child’s life?
+To argue against such a conclusion: there are relevant disanalogies. (Bob’s situation had imminent danger, our situation isn’t like that; there are systematic problems in our case.)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3.4 Causal Reasoning
+
+striking a match causes the effect of a flame…
+… so long as background conditions are met.
+
+Causal generalizations.
+
+
+
+
+
+
+
+
+
+What might cause seizures in my cat? (S)
+
+The necessary condition test: what feature(s) is present every time there was a seizure event?
+ The sufficient condition test: what feature(s) is present in the ABSENCE of the effect?
+It is possible for some features to be jointly sufficient. (There is not a situation where the joint features are present and the effect is absent.)
+Note: sometimes sufficient conditions are not necessary conditions.
+Rigorous testing is actively looking for situations where a candidate feature fails one of the tests (either the necessary or the sufficient condition tests).
+These tests are limited to being whole absent/present. (e.g. higher CO2 causes higher global temperatures)
+Instead, we then use method of concomitant variation. 
+positive correlation
+negative correlation
+However: correlation is not causation.
+There are four possibilities when A and B are positively correlated:
+Background knowledge helps make an inference from positive correlation to causation. Here, we might rely on, for example, inference to the best explanation (IBE).
+http://tylervigen.com/spurious-correlations 
+False cause fallacy or aka “post hoc” fallacy”: inferring from mere correlation that there is causation.
+
+3.5 Probability
+Unlike deductive arguments, there is no uniquely universally agreed method of evaluation. However, there are laws of probability.
+A probability is a number between 0 and 1.
+Probability of conjunctions: P(a and b) = P(a) x P(b)
+Probability of negations: P(not-a) = 1 - P(a)
+Probability of disjunctions: P(a or b) = P(a) + P(b). [I THINK MATHEW MAKES A MISTAKE PRESENTING IT THIS WAY, AS IT INVITES A COMMON ERROR: FORGETTING TO SUBTRACT THE DOUBLE COUNTING OF WHEN BOTH a and b OCCUR.] INSTEAD, DO THIS:
+Probability of disjunctions: P(a or b) = P(a) + P(b) - P(a and b)
+CAREFUL: disjunctions can be tricky. Rolling a six sided die six times should not result in a 100% that you get a 4.
+There are two ways to proceed. The way the Logic Text does it is in terms of negation. What’s the probability that I roll a six sided die six times but never roll a 4? That is a conjunction of negations: P(~R1=4 * ~R2=4 * … ~R6=4). And then I do 1 - P(no 4 in six rolls).
+Alternatively, use the updated formula I provide where you subtract out the issue of double counting. To illustrate, consider two fair coins. There are for possible combinations of events:
+h h
+h t
+t h
+t t
+The simple formula for the probability of disjunction double counts the first possibility. We want to count it only once, and so that’s why we subtract it once from the double count. 
+3.6 The conjunction fallacy
+Linda example (she is a bank teller; she is a bank teller and a feminist)
+Another example: Which is more probable? Mark has hair; Mark has blonde hair.
+3.7 The base rate fallacy
+A test comes back positive that you have colon cancer. The test is 95% accurate, i.e. it will detect people with colon cancer 95% of the time, and miss 5%. 
+sensitivity - it is about true positives vs false negatives
+specificity - it is about true negatives vs few false positives
+A 95% also means it will get 95% of the negative cases right, but will have 5% false negatives.
+Fallacy of ignoring the base rate: the chance of you having colon cancer is 95%.
+When true conditions are rare, even highly accurate tests should only raise the probability a little bit.
+Base rate of colon cancer: 0.5%
+So for 100,000 people, 500 have colon cancer.
+Of the 500, the test will correctly identify 475. (The true positives.)
+Of the 100,000 people, 99,500 do not have colon cancer.
+Of the 99,500, the 95% accurate test will misdiagnose 5% of them, i.e. 4975 will be false positives.
+So, your chances of having colon cancer given a positive test is 475/total # of positive identifications = 475/(475+4975) = 475/5450 = 0.087 = 8.7%.
+I like to do this as a table:
+
+Without information from the measurement/test, your chance of colon cancer is Base Rate * N / N
+With information from the measure and supposing it’s positive, your chance is Accuracy * Base Rate.
+NOTE: a true positive is a conjunction: the test says yes and the ground truth is yes
+Another example: eyewitness testimony
+Bob’s accuracy might be 99%. He says Nancy is the robber.
+Suppose in 1000 people, 995 are not robbers and 5 are.
+Bob will identify 4.9 robbers correctly, and misidentify 9.95 (false positives) (a total of 14.9 robber identification, i.e. true +false positives)
+This gives 4.95 / 14.9 = 33%. It’s more likely Nancy is NOT the robber (absent more specific information).
+
+
+BERT: TEST 3 IS HERE - I PUT THE FALLACIES AS PART OF THE MATERIAL FOR TEST 4
+
+Classify arguments into type:
+Analogically 
+IBE and 7 explanatory virtues
+Statistical generalization
+Causal reasoning
+necessary condition test
+sufficient condition test
+rigorous testing
+correlation vs causation
+
+basics of probability
+base rate fallacy
+
+3.8 The small numbers fallacy
+Jack, because he is drawing a smaller sample.
+It’s not so easy to detect this effect of small samples though:
+Smaller populations will have more extreme results, so if you are ranking counties by, e.g. cancer rates, than the rural counties are more likely to be towards both the top of the list and the bottom.
+Law of small numbers: smaller groups will tend to inhabit the extremes of a spectrum
+Small numbers fallacy: seeking a causal explanation when a mathematical explanation, like the law of small numbers, will do.
+	A humorous example: smaller schools will tend to do better than larger schools. The Gates Foundation invested 1.7 billion dollars to understand why, by, e.g. splitting larger schools in half. This could easily have been avoided: check the bottom of the ranking and see if you find smaller schools there too.
+
+
+
+3.9 Regression to the mean fallacy
+Regression to the mean is the tendency of things to go back to normal (or the statistical average).
+Getting better from a cold after taking some “medicine” does not mean the “medicine” (aka snake oil) worked. You likely regress back to a normal state of health.
+Hot streaks are another example.
+Regression to the mean fallacy occurs when you make a causal inference when the explanation is statistical or probabilistic in nature.
+To show that something is not a regression to the mean is to compare two groups (a treatment and a control) and compare their rates.
+Bert’s/Kahan’s usual Hand cream example:
+
+3.10 Gambler’s Fallacy
+Thinking that two independent random events can be influenced by each other.
+4 heads in a row does not influence the 5th flip. However, you might question whether the coin is really fair after all. We have to be careful here about the background assumptions we hold fixed.
+4.1 Formal vs Informal fallacies
+
+Fallacy: mistake in reasoning
+Formal fallacies are mistakes in reasoning because they have the wrong form, as compared to valid forms (the specific concepts for knowing if the claims are true are false don’t matter).
+
+Modus ponens vs Denying the Antecedent 
+
+Modus tollens vs Affirming the Consequent
+
+Example: 
+
+
+
+
+An informal fallacy cannot be identified without understanding the relevant concepts.
+
+4.1.1 Composition Fallacy
+Example of committing the fallacy:
+But in this “plastic” example, you are NOT committing the fallacy:
+The two examples have the same form:
+The two arguments have the same form, but differ in content. So what makes one fallacious but not the other must be because of something related to the content.
+
+4.1.2 Division fallacy
+(goes from the whole to the part, in contrast to the direction of the the composition fallacy)
+Example: The house costs 1M. Therefore each part of the house costs 1M.
+Example: The whole team died in the accident. Therefore each individual died.
+Trickier example: The team played their worst game. Therefore, each individual player played their worst game.
+Again: the specific concepts matter in assessing these arguments.
+
+4.1.3 Begging the question
+
+Notice: the premise and conclusion are nearly identical. 
+Begging the question occurs when the truth of the conclusion is already assumed (explicitly or implicitly) in one or more of the premises. It is circular reasoning. 
+Interesting: formally the mistake isn’t recognizable, in fact some valid arguments beg the questions. 
+This means that begging the question is an informal fallacy and requires us to utilize knowledge about the world.
+Also: giving reasons is more than just formal validity. We might say that formal validity is a necessary condition, but not a sufficient condition.
+
+
+4.1.4 False dichotomoy
+We can do disjunctive syllogism here, so the argument is valid.
+
+False dichotomy: a disjunction that does not exhaust all possible options.
+Notice that if we were to make a third option explicit, then the formal counterpart is now longer valid: 
+A v B v C
+~A
+Therefore B.
+[It’s invalid because B could be false and C could be true]
+Once again, we have to rely on the concepts involved to assess the argument. In this case, do the options being stated exhaust the relevant space of possibilities?
+
+4.1.5 Equivocation 
+
+Bert’s favorite example:
+Nobody is perfect.
+Bert is a nobody.
+Therefore, Bert is perfect.
+
+Most examples are tricky: 
+
+“law” is the term being used equivocally here (society laws (e.g. criminal) vs laws of nature).
+
+Again, informal because the concept matters.
+
+4.2 Slippery slope fallacies
+
+A concept is vague when the boundaries aren’t known precisely. These typically can be made into a sorites paradox.
+
+(do my grain of sand and heap example).
+
+4.2.1 Conceptual slippery slope
+If we can’t tell there isn’t a difference between A and B, and B and C, that may not mean we can’t tell the difference between A and C.
+
+
+“The difficulty of distinguishing instances of the conceptual slippery slope fallacy, and the fact that distinguishing it requires us to draw on our knowledge about the world, shows that the conceptual slippery slope fallacy is an informal fallacy.”
+
+4.2.2 Causal slippery slope fallacy
+Fun example: 
+The main point to realize is that probabilities are not preserved. That is, each individual causal (probabilistic) event may be high, but on aggregate they might decreases.
+(Make each of these claims have a 90%. If there were, say, 10 such claims, then you would have .9 x .9 x … x .9 = ~ 0.35
+IMPORTANT: THIS IS A FORMAL FALLACY because the meanings of the sentences don’t really matter — all we need to see this argument as a fallacy is the laws of probability theory.
+Contrast the causal slippery slope fallacy with HYPOTHETICAL SYLLOGISM.
+
+4.3 Fallacies of relevance
+Common theme: ways of responding to an argument that are irrelevant to the argument. 
+The responses may be psychologically (or emotionally) compelling, but upon more careful analysis we recognize they are not rationally compelling.
+
+4.3.1 Ad hominem
+means “against the man”
+- occurs when a response addresses the person and not the argument. 
+Example: Peter Singer makes an argument that it is morally wrong to spend money on luxuries for oneself instead of giving that money away to charity. This is an argument by analogy (like we’ve seen before).
+Now consider this criticism: Does Peter Singer give his money to charity?
+Notice: this criticism is not about the argument, it’s about Peter Singer.
+We should be interested in the quality of the argument.
+That said, sometimes criticizing a person is a means of addressing an argument, e.g. witness testimony.
+The question to ask: is the person relevant to the validity of the argument? If no, then it might be an ad hominem.
+
+4.3.2 Straw man
+Misrepresenting a position so as to make it easier to refute.
+Is the critic’s reconstructed argument, B, that has been refuted with criticism C, relevant to the original argument or position, A.
+DRAW THIS: C is a criticism of B. But if B is not a fair representation of A, i.e. if B is a “straw man”, then C is not relevant as a criticism to A.
+
+4.3.3 Tu quoque
+“you too” or appeal to hypocrisy
+Avoiding a criticism by pointing out it applies to the criticer.
+Examples (from chatgpt).
+	1.	Political Debate:
+	•	Person A: “Your party’s policy on climate change is ineffective and damaging to the environment.”
+	•	Person B: “Well, your party also doesn’t do much to protect the environment, so you have no room to talk!”
+	•	(Here, Person B deflects the criticism instead of addressing whether their party’s policy is truly damaging to the environment.)
+	2.	Health and Lifestyle:
+	•	Parent: “You should quit smoking; it’s bad for your health.”
+	•	Teen: “But you smoke, too!”
+	•	(The teen is ignoring the health advice by focusing on the parent’s own smoking habits rather than the truth of the claim.)
+	3.	Workplace Argument:
+	•	Coworker A: “You missed the deadline on this project, which has set us all back.”
+	•	Coworker B: “Well, you missed a deadline last month, so you can’t lecture me about deadlines!”
+	•	(Coworker B tries to invalidate the criticism by pointing out Coworker A’s past behavior, rather than taking accountability for their own mistake.)
+	4.	Relationship Dispute:
+	•	Partner A: “I feel like you don’t listen to me when I talk.”
+	•	Partner B: “Well, you never listen to me either!”
+	•	(Rather than addressing Partner A’s feelings or behavior, Partner B deflects by making a similar accusation.)
+	5.	Ethics in Business:
+	•	Customer: “Your company has poor labor practices.”
+	•	Business Rep: “But most companies in our industry do the same thing!”
+	•	(The representative shifts the focus to the industry’s practices rather than addressing the company’s own practices.)
+	6.	School Discipline:
+	•	Teacher: “Cheating on the test is wrong and unfair to other students.”
+	•	Student: “But other students cheat too!”
+	•	(The student’s response does not address whether cheating is wrong but instead tries to justify it by noting others’ similar behavior.)
+
+ASK: WHY IS TU QUOQUE A FALLACY OF RELEVANCE?
+4.3.4 Genetic fallacy
+	1.	Religious Belief:
+	•	Person A: “I believe in practicing kindness and compassion because it’s a central teaching in my religion.”
+	•	Person B: “Well, that’s just because you were raised in a religious family. If you hadn’t been, you wouldn’t believe that.”
+	•	Here, Person B dismisses Person A’s belief by pointing to its origin (the religious upbringing), rather than addressing whether kindness and compassion are valid or valuable principles.
+	2.	Scientific Discovery:
+	•	Scientist A: “The theory of relativity has profound implications for our understanding of time and space.”
+	•	Person B: “That theory came from Albert Einstein, who wasn’t even a ‘proper’ academic at the time he developed it, so why should we trust it?”
+	•	This is the genetic fallacy because Person B dismisses the theory of relativity based on Einstein’s unconventional academic status rather than evaluating the scientific merits of the theory itself.
+	3.	Political Argument:
+	•	Person A: “I think this new policy proposal is beneficial for improving the economy.”
+	•	Person B: “Of course you think that—you’re a member of that political party!”
+	•	Instead of examining the proposal on its own merits, Person B discredits it by attributing Person A’s support solely to their party affiliation, implying that the proposal is bad simply because of its source.
+
+Genetic fallacies are most common when the origins are negative, but they can also occur from positive origins. 
+	Example: The Golden Rule must be good because it originated from Jesus in the Sermon on the Mount (it didn’t).
+ASSESS IDEAS FOR THEIR MERITS, NOT THEIR ORIGINS.
+Ask, why is this a fallacy of relevance?
+4.3.5 Appeal to consequences
+Like the genetic fallacy in reverse: the consequences of accepting an idea are not relevant to the truth of the idea.
+Example: suppose a study reveals that there are IQ differences between sexes. A criticism of the study that focuses on the downstream consequences of accepting the results of the study is committing the appeal to consequences fallacy. A relevant criticism would be one that focuses on, e.g. a flaw in the design of the study (e.g. low sample size!).
+Important: the researchers might choose not to publish the study because of it’s potential negative consequences. That would NOT be a fallacy. ASK WHY
+
+4.3.6 Appeal to authority
+Doctors are authorities on medical procedures, but not their ethical status. 
+
+As in all the cases above, ASK: Is the person’s status relevant to the claim/argument?
+
+TURNING TO DENNETT’S CHPT II A DOZEN GENERAL THINKING TOOLS
+(these are Notebook LM notes)
+
+Dennett's General Thinking Tools with Examples
+Chapter II of Dennett's book Intuition Pumps and Other Tools for Thinking presents twelve general thinking tools. Here are the main concepts and examples for each of them:
+1. Making Mistakes
+Don't be afraid to make mistakes, as long as you learn from them. Dennett argues that mistakes are valuable opportunities for learning and growth. [1] He suggests that we should cultivate a habit of examining our mistakes to understand where we went wrong and how to avoid repeating them. [1]
+Example: Imagine you are learning to play a new musical instrument. You are bound to make mistakes along the way, hitting wrong notes and struggling with difficult passages. [1] However, by paying attention to these mistakes and figuring out how to correct them, you will gradually improve your skills.
+2. "By Parody of Reasoning": Using Reductio ad Absurdum
+Reductio ad absurdum is a powerful technique for exposing the flaws in an argument by demonstrating that its logical consequences are ridiculous or impossible. [2]
+Example: Someone argues that all beliefs are equally valid because everyone has a right to their own opinion. You could use reductio ad absurdum to counter this argument by pointing out that this would mean the belief that the earth is flat is equally valid as the belief that the earth is round, which is absurd.
+3. Rapoport's Rules 
+These rules are a set of guidelines for engaging in constructive dialogue and debate, particularly when discussing controversial topics. [3] They encourage respectful communication, careful listening, and an attempt to understand opposing viewpoints. [3]
+Example: Before criticizing someone's argument, you should accurately restate their position in a way they would agree with, demonstrating that you have genuinely attempted to understand their perspective. [3]
+
+
+—expanding on Rapoport’s Rules
+Expanding on Rapoport's Rules
+Rapoport's Rules are a set of guidelines for creating a successful critical commentary, especially when disagreeing with someone. They were developed by Anatol Rapoport, a social psychologist and game theorist. Dennett highlights these rules in his book as a powerful tool for fostering constructive dialogue and promoting understanding, even amidst disagreements [1]. They are particularly useful when discussing complex or controversial subjects, where emotions can run high and hinder productive conversations [1].
+Here are the four rules as outlined by Dennett [2]:
+Restate Your Target's Position: Begin by attempting to re-express your target's position so clearly, vividly, and fairly that they would say, "Thanks, I wish I'd thought of putting it that way" [2]. This demonstrates a genuine effort to understand and accurately represent their viewpoint before offering any criticism.
+Highlight Points of Agreement: Next, list any points of agreement, especially if they are not matters of general or widespread agreement [2]. This helps establish common ground and shows that you are not simply engaging in blind opposition.
+Acknowledge What You Have Learned: Mention anything you have learned from your target [2]. This further demonstrates your willingness to engage with their ideas and acknowledge their intellectual contributions.
+Finally, Offer Rebuttal or Criticism: Only after completing the first three steps are you permitted to say so much as a word of rebuttal or criticism [2].
+By following these rules, you can create a more receptive audience for your criticisms. You have already demonstrated your understanding of their position, your respect for their intellect, and your willingness to engage in good faith [2]. This approach can help foster a more constructive and productive dialogue, even when you fundamentally disagree with the other person.
+Dennett points out that following Rapoport's Rules is not always easy, especially when dealing with arguments you find particularly frustrating or poorly constructed [3]. It can be tempting to simply dismiss or ridicule opposing viewpoints. However, he emphasizes the value of striving for fairness and accuracy, even when it is challenging [3].
+Dennett shares his own experience using Rapoport's Rules when engaging with philosopher Robert Kane's views on free will. He diligently attempted to present a fair and comprehensive account of Kane's arguments, even though he ultimately disagreed with them [3]. This approach earned him respect from Kane, who appreciated Dennett's effort to accurately portray his position [3, 4].
+Dennett concludes by recommending Rapoport's Rules as a valuable tool for anyone seeking to engage in thoughtful and productive debates. He acknowledges that it can be a struggle to follow these rules consistently, but emphasizes the rewarding results they can yield [4]. By prioritizing understanding and respect, Rapoport's Rules can help transform confrontational arguments into opportunities for genuine intellectual exchange and growth.
+
+
+
+4. Sturgeon's Law
+This adage states that "ninety percent of everything is crap." [4] Dennett uses it to remind us that most things in any given field are likely to be mediocre or worse. [4] It encourages us to be discerning and focus on the truly exceptional. [4]
+Example: If you are browsing a new music streaming service, you might find that the vast majority of the songs are uninspired or derivative. Sturgeon's Law suggests that this is to be expected and that your time would be better spent seeking out the truly innovative and high-quality artists.
+5. Occam's Razor
+This principle states that, when faced with multiple explanations, the simplest one is usually the best. [5] It encourages us to avoid unnecessary complexity and prioritize parsimonious explanations. [5]
+Example: You hear a strange noise in your attic. One explanation is that it's a ghost, while another is that it's a family of squirrels that has taken up residence. Applying Occam's Razor, the simpler explanation - squirrels - is more likely to be correct.
+6. Occam's Broom
+This satirical term refers to the practice of selectively ignoring evidence that contradicts one's preferred theory. [6] It is a warning against confirmation bias and intellectual dishonesty. [6]
+Example: A climate change denier might dismiss overwhelming scientific evidence supporting the reality of human-caused climate change as "fake news" or a "conspiracy" to maintain funding for environmental research, effectively sweeping inconvenient facts under the rug.
+7. Using Lay Audiences as Decoys
+This "tool" is a criticism of the practice of simplifying complex ideas to the point of distortion in order to make them more palatable to a general audience. [7] Dennett argues that this can lead to the spread of misinformation and a superficial understanding of important issues. [7]
+Example: A popular science book might oversimplify quantum mechanics by using misleading analogies or omitting crucial details, ultimately giving readers a flawed understanding of the subject.
+8. Jootsing
+This term, coined by Hofstadter, refers to the process of "jumping out of the system" to gain a fresh perspective on a problem. [8] It involves breaking free from conventional patterns of thought and exploring new approaches. [8]
+Example: You are trying to solve a difficult math problem but keep getting stuck using the same approach. Jootsing would involve stepping back, trying to reframe the problem in a different way, and exploring alternative methods for finding a solution.
+9. Three Species of Goulding (see below for expanded notes)
+This refers to three rhetorical techniques often employed by the evolutionary biologist Stephen Jay Gould, which Dennett identifies as "rathering," "piling on," and the "Gould Two-Step." [9] These techniques, while sometimes effective, can be used to subtly mislead or misrepresent opposing viewpoints. [9]
+Example: "Rathering" involves presenting a weaker, easily refutable version of an opponent's argument instead of engaging with their actual position. [9]
+10. The "Surely" Operator: A Mental Block
+Dennett observes that the word "surely" is often used to introduce a claim that the author wants the reader to accept without further argument. [10] He warns that this can be a sign of intellectual laziness or an attempt to smuggle in a questionable assumption. [10]
+Example: A philosopher might write, "Surely, it is self-evident that consciousness cannot be explained by purely material processes." The use of "surely" here attempts to shut down critical thinking and encourages the reader to accept the claim uncritically. [10]
+11. Rhetorical Questions
+Dennett argues that rhetorical questions can be used to subtly bias an audience by embedding hidden assumptions or framing an issue in a particular way. [11]
+Example: Asking "Why are liberals so obsessed with political correctness?" implies that liberals are indeed "obsessed" with political correctness and frames the issue as a problem rather than a positive attempt to promote respectful and inclusive language.
+12. What Is a Deepity?
+Dennett uses this term to describe statements that sound profound but are actually either trivially true or demonstrably false. [12] They often rely on ambiguity or vagueness to create an illusion of depth. [12]
+Example: "Love is just a word." This statement might sound insightful at first, but on closer examination, it is either trivially true (words are just labels for concepts) or demonstrably false (love is a complex emotion with profound psychological and behavioral effects).
+These twelve tools, along with the other concepts discussed throughout Intuition Pumps, provide a framework for thinking more critically and effectively about a wide range of topics.
+
+Three species of Goulding - expanded.
+Dennett's "Three Species of Goulding"
+As described in the previous response, the "Three Species of Goulding" are rhetorical techniques that philosopher Daniel Dennett identifies in the works of evolutionary biologist Stephen Jay Gould. These techniques can be effective in argumentation, but Dennett warns that they can also be used to subtly mislead or misrepresent opposing viewpoints. He calls them "species of Goulding" as a playful nod to Gould's expertise in taxonomy and evolutionary biology. Let's examine each of these techniques in more detail:
+1. Rathering
+Rathering involves creating a false dichotomy between two positions, implying that one must choose between them while ignoring the possibility of other alternatives or nuances. It often employs the word "rather" to suggest a stark contrast between two options, when in reality, the situation may be more complex. [1]
+Example: Gould argues: "Change does not usually occur by imperceptibly gradual alteration of entire species but rather by isolation of small populations and their geologically instantaneous transformation into new species." [2]
+Dennett points out that this passage presents a false dichotomy between gradualism and instantaneous transformation, implying that evolution must proceed in one way or the other. However, it is entirely possible for evolution to involve both gradual changes within populations and relatively rapid speciation events. [2]
+Rathering can be a misleading technique because it oversimplifies complex issues and discourages consideration of alternative explanations.
+2. Piling On
+Piling on involves making a series of increasingly strong claims that build upon each other, culminating in a sweeping generalization that may not be fully supported by the evidence. The initial claims may be true or partially true, but the technique aims to create a sense of overwhelming momentum that leads the reader to accept the final, more dubious conclusion. [3]
+Example: Gould states: "We talk about the 'march from monad to man' (old-style language again) as though evolution followed continuous pathways of progress along unbroken lineages. Nothing could be further from reality." [3]
+Dennett notes that while Gould's ultimate point - that evolution is not a linear progression towards some predetermined goal - is valid, the way he phrases his argument is misleading. The phrase "nothing could be further from reality" suggests that the very idea of continuous lineages is entirely wrong, when in fact, it is a fundamental principle of evolutionary theory. Gould's use of "piling on" creates an exaggerated sense of contrast and downplays the importance of continuous lineages in evolution. [4]
+Piling on can be problematic because it can lead to the acceptance of overstated or unsubstantiated claims based on the persuasive force of the argument's structure rather than the strength of the evidence.
+3. The Gould Two-Step
+The Gould Two-Step is a more elaborate rhetorical maneuver that involves two distinct stages: [5]
+Creating a Straw Man: First, the arguer misrepresents their opponent's position, presenting a weaker or distorted version of their argument that is easier to attack.
+Claiming Victory by Misinterpreting Concessions: Then, the arguer cites evidence that their opponent does not actually hold the straw-man view they have attributed to them. However, instead of acknowledging their misrepresentation, the arguer interprets these citations as concessions to their attack, implying that their opponent has been forced to back down from their original position.
+Example: Dennett describes how Gould invented the term "extrapolationism" to describe a supposed error in Helena Cronin's book The Ant and the Peacock. Gould portrays this as a doctrine of extreme gradualism and continuity that is easily refuted by the fact of mass extinctions. However, Dennett argues that Cronin never actually endorsed such a view, and that Gould's characterization of her position is a straw man. [6]
+The Gould Two-Step is a deceptive technique because it creates the illusion of winning an argument while avoiding genuine engagement with the opponent's actual views.
+In summary, Dennett's "Three Species of Goulding" highlight the importance of being aware of rhetorical techniques that can be used to subtly bias an argument. While these techniques are not necessarily fallacious in themselves, they can be employed to mislead or misrepresent opposing positions. By identifying and understanding these techniques, readers can become more critical consumers of information and better equipped to navigate complex arguments.
+
+
+TEST 4 REVIEW
+Show monty python bit.
+Show summary slides.
+Make sure to cover these parts: 
+Formal Fallacies
+
+Small numbers fallacy
+
+Regression to the mean fallacy
+
+Gambler’s fallacy
+
+Denying the Antecedent
+
+Affirming the Consequent
+
+Informal Fallacies
+
+Composition fallacy
+
+Division fallacy
+
+Begging the question 
+
+False dichotomy
+
+Equivocation
+
+Conceptual slippery slope
+
+Causal slippery slope
+
+Fallacies of Relevance
+
+Ad hominem
+
+Straw man
+
+Tu quoque
+
+Genetic fallacy
+
+Appeal to consequences
+
+Appeal to authority
+
+Tools for thinking
+
+1. Restate your target’s position. Aim for such clarity that they would say, “I wish I would have put it that way.”
+
+2. Highly points of agreement. This shows good faith and establishes common ground.
+
+3. Acknowledge what you have learned. This demonstrates willingness to engage and models the kind of argumentation you want to see in return.
+
+4. Offer rebuttal or criticism. Remember, simply disagreeing with a conclusion is not enough. A criticism focus on the reasons that the target provided for their conclusion.
