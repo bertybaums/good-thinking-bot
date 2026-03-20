@@ -27,9 +27,12 @@ Thumbs.db
 *.swp
 *.swo
 
-# Corpus output (generated data — large, regenerable)
-corpus-tools/output/*.jsonl
+# Corpus output — bulk generated data (large, regenerable)
+corpus-tools/output/adapted_*.jsonl
+corpus-tools/output/synthetic_*.jsonl
+corpus-tools/output/flagged_*.jsonl
 corpus-tools/output/*.html
+# Note: anchors.jsonl and other hand-crafted files ARE tracked
 
 # Copyrighted resource files (keep local only)
 resources/the-economy-2-0-microeconomics-epub.epub
