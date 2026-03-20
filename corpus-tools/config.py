@@ -1,16 +1,26 @@
 """
 Configuration for the Good Thinking Bot training corpus pipeline.
 
-API keys and endpoints are read from environment variables.
-Set them in a .env file or export them before running pipeline scripts.
+API keys and endpoints are loaded from .env in the project root,
+then overridable via environment variables.
+
+To set up: create a .env file in the project root with:
+    ANTHROPIC_API_KEY=sk-ant-...
+    MINDROUTER_API_KEY=your-key
+    MINDROUTER_BASE_URL=https://your-endpoint/v1
 """
 
 import os
 from pathlib import Path
 
+from dotenv import load_dotenv
+
 # ─── Paths ────────────────────────────────────────────────────────────────────
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
+
+# Load .env from project root (won't override existing env vars)
+load_dotenv(PROJECT_ROOT / ".env")
 RESOURCES_DIR = PROJECT_ROOT / "resources"
 CORPUS_OUTPUT_DIR = Path(__file__).resolve().parent / "output"
 PROMPTS_DIR = Path(__file__).resolve().parent / "prompts"
