@@ -319,14 +319,20 @@ async def process_dataset(name: str, records: list[dict], max_records: int | Non
             print(f"  Progress: {total}/{len(records)} ({counter['valid']} valid) [{elapsed:.0f}s]", flush=True)
         return result
 
-    all_results = await asyncio.gather(*[process_one(r) for r in records])
-    results = [r for r in all_results if r is not None]
-
-    # Write output
+    # Process in batches and write incrementally
     output_file = OUTPUT_DIR / f"adapted_{name}.jsonl"
-    with open(output_file, "w") as f:
-        for rec in results:
-            f.write(json.dumps(rec) + "\n")
+    batch_size = 20  # Process 20 at a time, write after each batch
+    results = []
+
+    with open(output_file, "w") as out_f:
+        for batch_start in range(0, len(records), batch_size):
+            batch = records[batch_start : batch_start + batch_size]
+            batch_results = await asyncio.gather(*[process_one(r) for r in batch])
+            for r in batch_results:
+                if r is not None:
+                    out_f.write(json.dumps(r) + "\n")
+                    results.append(r)
+            out_f.flush()
 
     elapsed = time.time() - start
     print(f"\n  Done: {len(results)}/{len(records)} valid ({len(results)/len(records):.1%})")
