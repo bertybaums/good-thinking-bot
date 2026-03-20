@@ -68,7 +68,8 @@ MINDROUTER_MODELS = {
 
 # Max concurrent requests per provider
 ANTHROPIC_MAX_CONCURRENT = 5
-MINDROUTER_MAX_CONCURRENT = 20
+# MindRouter limits per model (gpt-oss-120b=8, qwen3.5-400b=4)
+MINDROUTER_MAX_CONCURRENT = 4  # Conservative: use the lower model's limit
 
 # Retry config
 MAX_RETRIES = 3
