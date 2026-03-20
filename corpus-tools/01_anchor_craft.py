@@ -49,30 +49,9 @@ def codes_needing_anchors(existing: dict[str, CorpusRecord]) -> list[str]:
 
 
 def get_source_passage(code: str) -> str:
-    """
-    Load relevant source material for a taxonomy code.
-
-    In practice, this would read from the actual source files.
-    For now, returns the taxonomy description as a seed.
-    """
-    entry = TAXONOMY[code]
-    source_notes = entry.get("source_notes", "")
-
-    # Build a passage from the taxonomy entry itself
-    passage = (
-        f"Pattern: {entry['label']}\n"
-        f"Description: {entry['description']}\n"
-        f"Type: {entry['pattern_type']}\n"
-        f"Source references: {source_notes}\n"
-    )
-
-    # TODO: In production, read actual source files based on source_notes:
-    # - "PHIL 201 Ch X" -> read from Notes for 2010 Critical Thinking.txt
-    # - "W1", "W2", etc. -> read from rationality-and-strategic-interactions/
-    # - "Fallacy poster" -> read from Poster - Logical Fallacies.pdf
-    # - "Bias poster" -> read from Poster - Cognitive Biases.pdf
-
-    return passage
+    """Load relevant source material for a taxonomy code."""
+    from source_loader import get_source_passage as _load
+    return _load(code)
 
 
 def interactive_craft(client: LLMClient, code: str, existing: dict) -> None:
