@@ -54,14 +54,14 @@ ANTHROPIC_MODELS = {
 # ─── MindRouter (campus HPC, bulk work) ───────────────────────────────────────
 
 MINDROUTER_BASE_URL = os.environ.get(
-    "MINDROUTER_BASE_URL", "https://mindrouter.example.edu/v1"
+    "MINDROUTER_BASE_URL", "https://mindrouter.uidaho.edu/v1"
 )
 MINDROUTER_API_KEY = os.environ.get("MINDROUTER_API_KEY", "")
 
 MINDROUTER_MODELS = {
-    "bulk_gen": "gpt-oss-120b",        # Synthetic generation drafts
-    "cross_val": "qwen3.5-400b",       # Classification cross-validation
-    "adapt": "qwen3.5-400b",           # Dataset adaptation / enrichment
+    "bulk_gen": "openai/gpt-oss-120b",      # Synthetic generation drafts
+    "cross_val": "qwen/qwen3.5-400b",       # Classification cross-validation
+    "adapt": "qwen/qwen3.5-400b",           # Dataset adaptation / enrichment
 }
 
 # ─── Rate limiting ────────────────────────────────────────────────────────────
