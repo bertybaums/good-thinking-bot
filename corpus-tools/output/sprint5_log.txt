@@ -1,0 +1,90 @@
+Sprint 5: Game Theory + Integrated Scenarios
+Model: openai/gpt-oss-120b | Concurrency: 8
+Part A: 1008 game theory examples
+Part B: 200 integrated scenarios
+Total: 1208
+  Progress: 40/1208 (40 valid, 0 failed) [65s]
+  Progress: 80/1208 (80 valid, 0 failed) [137s]
+  Progress: 120/1208 (120 valid, 0 failed) [202s]
+  Progress: 160/1208 (159 valid, 1 failed) [270s]
+  Progress: 200/1208 (199 valid, 1 failed) [339s]
+  Progress: 240/1208 (239 valid, 1 failed) [413s]
+  Progress: 280/1208 (279 valid, 1 failed) [476s]
+  Progress: 320/1208 (319 valid, 1 failed) [538s]
+  Progress: 360/1208 (359 valid, 1 failed) [630s]
+  Progress: 400/1208 (397 valid, 3 failed) [702s]
+  Progress: 440/1208 (437 valid, 3 failed) [781s]
+  Progress: 480/1208 (476 valid, 4 failed) [855s]
+  Progress: 520/1208 (515 valid, 5 failed) [933s]
+  Progress: 560/1208 (554 valid, 6 failed) [1003s]
+  Progress: 600/1208 (594 valid, 6 failed) [1070s]
+  Progress: 640/1208 (634 valid, 6 failed) [1139s]
+  Progress: 680/1208 (674 valid, 6 failed) [1204s]
+  Progress: 720/1208 (714 valid, 6 failed) [1263s]
+  Progress: 760/1208 (754 valid, 6 failed) [1323s]
+  Progress: 800/1208 (794 valid, 6 failed) [1402s]
+  Progress: 840/1208 (833 valid, 7 failed) [1472s]
+  Progress: 880/1208 (873 valid, 7 failed) [1540s]
+  Progress: 920/1208 (912 valid, 8 failed) [1619s]
+  Progress: 960/1208 (952 valid, 8 failed) [1679s]
+  Progress: 1000/1208 (992 valid, 8 failed) [1750s]
+  Progress: 1040/1208 (1032 valid, 8 failed) [1810s]
+  Progress: 1080/1208 (1071 valid, 9 failed) [1885s]
+  Progress: 1120/1208 (1110 valid, 10 failed) [1955s]
+  Progress: 1160/1208 (1150 valid, 10 failed) [2020s]
+  Progress: 1200/1208 (1189 valid, 11 failed) [2101s]
+  Progress: 1208/1208 (1197 valid, 11 failed) [2116s]
+
+============================================================
+SPRINT 5 COMPLETE
+============================================================
+Total: 1197 valid, 11 failed (99.1% success)
+Time: 2116s
+Output: /Users/bbaum/Documents/claude-projects/good-thinking-bot/corpus-tools/output/synthetic_GT_integrated_sprint5.jsonl
+
+Per-code counts:
+  A3.5: 5
+  A3.5+A8.7: 5
+  A4.3: 9
+  A4.3+A8.2: 1
+  A6.4: 9
+  A6.4+A7.7: 1
+  A7.1: 4
+  A7.1+A7.2: 6
+  A7.6: 6
+  A7.6+E1.4: 4
+  A8.5: 9
+  A8.5+B3.1: 1
+  B10.1: 56
+  B10.2: 66
+  B10.3: 56
+  B10.4: 56
+  B4.1: 10
+  B6.1: 65
+  B6.1+B5.2: 1
+  B6.2: 56
+  B6.3: 56
+  B7.1: 58
+  B7.2: 56
+  B7.3: 56
+  B7.4: 56
+  B8.1: 56
+  B8.2: 66
+  B8.3: 56
+  B8.4: 56
+  B9.1: 63
+  B9.1+C3.1: 2
+  B9.2: 56
+  B9.3: 54
+  C1.1: 10
+  D1.1: 8
+  D1.1+A7.2: 2
+  D2.1: 10
+  D2.2: 7
+  D2.2+C3.2: 3
+  D2.3: 10
+  E1.18: 7
+  E1.18+A7.9: 3
+  E1.2: 10
+  E1.3: 9
+  E1.3+C4.1: 1

@@ -1,0 +1,95 @@
+Sprint 4: Synthetic Cognitive Biases Generation
+Model: openai/gpt-oss-120b | Concurrency: 8
+Plan: 2400 examples across 24 codes
+  Progress: 40/2400 (40 valid, 0 failed) [59s]
+  Progress: 80/2400 (80 valid, 0 failed) [118s]
+  Progress: 120/2400 (120 valid, 0 failed) [196s]
+  Progress: 160/2400 (160 valid, 0 failed) [247s]
+  Progress: 200/2400 (200 valid, 0 failed) [304s]
+  Progress: 240/2400 (240 valid, 0 failed) [356s]
+  Progress: 280/2400 (280 valid, 0 failed) [410s]
+  Progress: 320/2400 (320 valid, 0 failed) [460s]
+  Progress: 360/2400 (360 valid, 0 failed) [514s]
+  Progress: 400/2400 (400 valid, 0 failed) [573s]
+  Progress: 440/2400 (440 valid, 0 failed) [625s]
+  Progress: 480/2400 (480 valid, 0 failed) [674s]
+  Progress: 520/2400 (520 valid, 0 failed) [734s]
+  Progress: 560/2400 (560 valid, 0 failed) [785s]
+  Progress: 600/2400 (600 valid, 0 failed) [837s]
+  Progress: 640/2400 (640 valid, 0 failed) [890s]
+  Progress: 680/2400 (680 valid, 0 failed) [941s]
+  Progress: 720/2400 (720 valid, 0 failed) [999s]
+  Progress: 760/2400 (760 valid, 0 failed) [1051s]
+  Progress: 800/2400 (800 valid, 0 failed) [1105s]
+  Progress: 840/2400 (840 valid, 0 failed) [1156s]
+  Progress: 880/2400 (880 valid, 0 failed) [1210s]
+  Progress: 920/2400 (920 valid, 0 failed) [1262s]
+  Progress: 960/2400 (960 valid, 0 failed) [1315s]
+  Progress: 1000/2400 (1000 valid, 0 failed) [1367s]
+  Progress: 1040/2400 (1040 valid, 0 failed) [1424s]
+  Progress: 1080/2400 (1080 valid, 0 failed) [1477s]
+  Progress: 1120/2400 (1120 valid, 0 failed) [1531s]
+  Progress: 1160/2400 (1160 valid, 0 failed) [1591s]
+  Progress: 1200/2400 (1200 valid, 0 failed) [1648s]
+  Progress: 1240/2400 (1240 valid, 0 failed) [1701s]
+  Progress: 1280/2400 (1280 valid, 0 failed) [1751s]
+  Progress: 1320/2400 (1320 valid, 0 failed) [1803s]
+  Progress: 1360/2400 (1360 valid, 0 failed) [1856s]
+  Progress: 1400/2400 (1400 valid, 0 failed) [1907s]
+  Progress: 1440/2400 (1440 valid, 0 failed) [1956s]
+  Progress: 1480/2400 (1480 valid, 0 failed) [2007s]
+  Progress: 1520/2400 (1520 valid, 0 failed) [2059s]
+  Progress: 1560/2400 (1560 valid, 0 failed) [2121s]
+  Progress: 1600/2400 (1600 valid, 0 failed) [2182s]
+  Progress: 1640/2400 (1640 valid, 0 failed) [2233s]
+  Progress: 1680/2400 (1680 valid, 0 failed) [2283s]
+  Progress: 1720/2400 (1720 valid, 0 failed) [2336s]
+  Progress: 1760/2400 (1760 valid, 0 failed) [2390s]
+  Progress: 1800/2400 (1800 valid, 0 failed) [2441s]
+  Progress: 1840/2400 (1840 valid, 0 failed) [2491s]
+  Progress: 1880/2400 (1880 valid, 0 failed) [2548s]
+  Progress: 1920/2400 (1920 valid, 0 failed) [2601s]
+  Progress: 1960/2400 (1960 valid, 0 failed) [2650s]
+  Progress: 2000/2400 (2000 valid, 0 failed) [2704s]
+  Progress: 2040/2400 (2040 valid, 0 failed) [2756s]
+  Progress: 2080/2400 (2080 valid, 0 failed) [2808s]
+  Progress: 2120/2400 (2120 valid, 0 failed) [2860s]
+  Progress: 2160/2400 (2160 valid, 0 failed) [2912s]
+  Progress: 2200/2400 (2200 valid, 0 failed) [2963s]
+  Progress: 2240/2400 (2240 valid, 0 failed) [3015s]
+  Progress: 2280/2400 (2280 valid, 0 failed) [3065s]
+  Progress: 2320/2400 (2320 valid, 0 failed) [3114s]
+  Progress: 2360/2400 (2360 valid, 0 failed) [3165s]
+  Progress: 2400/2400 (2400 valid, 0 failed) [3218s]
+
+============================================================
+SPRINT 4 COMPLETE
+============================================================
+Total: 2400 valid, 0 failed (100.0% success)
+Time: 3218s
+Output: /Users/bbaum/Documents/claude-projects/good-thinking-bot/corpus-tools/output/synthetic_biases_sprint4.jsonl
+Traceback (most recent call last):
+  File "/Users/bbaum/Documents/claude-projects/good-thinking-bot/corpus-tools/run_sprint4_synthetic_biases.py", line 212, in <module>
+    asyncio.run(main())
+    ~~~~~~~~~~~^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/base_events.py", line 725, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "/Users/bbaum/Documents/claude-projects/good-thinking-bot/corpus-tools/run_sprint4_synthetic_biases.py", line 204, in main
+    tier_counts = Counter(r["difficulty_tier"] for r in records)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/collections/__init__.py", line 611, in __init__
+    self.update(iterable, **kwds)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/collections/__init__.py", line 703, in update
+    _count_elements(self, iterable)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/Users/bbaum/Documents/claude-projects/good-thinking-bot/corpus-tools/run_sprint4_synthetic_biases.py", line 204, in <genexpr>
+    tier_counts = Counter(r["difficulty_tier"] for r in records)
+                          ~^^^^^^^^^^^^^^^^^^^
+KeyError: 'difficulty_tier'

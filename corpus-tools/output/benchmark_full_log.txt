@@ -1,0 +1,236 @@
+Loaded 167 anchors
+Subject model: openai/gpt-oss-20b
+Judge model: qwen/qwen3.5-400b
+Mode: all
+
+--- Mode: identify ---
+  Progress: 10/167 [224s]
+  Progress: 20/167 [454s]
+  Progress: 30/167 [623s]
+  Progress: 40/167 [791s]
+  Progress: 50/167 [991s]
+  Progress: 60/167 [1139s]
+  Progress: 70/167 [1305s]
+  Progress: 80/167 [1546s]
+  Progress: 90/167 [5527s]
+  Progress: 100/167 [6204s]
+  Progress: 110/167 [6213s]
+  Progress: 120/167 [6226s]
+  Progress: 130/167 [6238s]
+  Progress: 140/167 [6246s]
+  Progress: 150/167 [6262s]
+  Progress: 160/167 [6272s]
+
+--- Mode: classify ---
+  Progress: 10/167 [2s]
+  Progress: 20/167 [2s]
+  Progress: 30/167 [3s]
+  Progress: 40/167 [4s]
+  Progress: 50/167 [5s]
+  Progress: 60/167 [6s]
+  Progress: 70/167 [7s]
+  Progress: 80/167 [8s]
+  Progress: 90/167 [9s]
+  Progress: 100/167 [10s]
+  Progress: 110/167 [10s]
+  Progress: 120/167 [11s]
+  Progress: 130/167 [12s]
+  Progress: 140/167 [13s]
+  Progress: 150/167 [14s]
+  Progress: 160/167 [15s]
+
+--- Mode: explain ---
+  Progress: 10/167 [15s]
+  Progress: 20/167 [28s]
+  Progress: 30/167 [36s]
+  Progress: 40/167 [48s]
+  Progress: 50/167 [60s]
+  Progress: 60/167 [68s]
+  Progress: 70/167 [80s]
+  Progress: 80/167 [88s]
+  Progress: 90/167 [102s]
+  Progress: 100/167 [114s]
+  Progress: 110/167 [122s]
+  Progress: 120/167 [134s]
+  Progress: 130/167 [147s]
+  Progress: 140/167 [156s]
+  Progress: 150/167 [169s]
+  Progress: 160/167 [176s]
+
+Results saved to /Users/bbaum/Documents/claude-projects/good-thinking-bot/corpus-tools/output/benchmark_openai-gpt-oss-20b.jsonl
+
+######################################################################
+MODE: IDENTIFY
+######################################################################
+
+======================================================================
+BENCHMARK REPORT: openai/gpt-oss-20b
+======================================================================
+Records evaluated: 167
+Mean score: 2.62 / 4.00
+Score distribution: Counter({3: 77, 2: 55, 4: 21, 1: 12, 0: 2})
+
+Track                                 Mean     n    0    1    2    3    4
+----------------------------------------------------------------------
+cognitive_biases                      2.62    24    0    0   11   11    2
+decision_theory                       2.81    31    0    1    9   16    5
+dennett_tools                         1.93    14    0    5    5    4    0
+game_theory                           2.28    18    0    2    9    7    0
+logic_critical_thinking               2.72    65    2    4   17   29   13
+microeconomics                        2.80    15    0    0    4   10    1
+
+Tier              Mean     n
+------------------------------
+drill             2.73   112
+what_if           2.39    49
+puzzle            2.33     6
+
+Pattern Type      Mean     n
+------------------------------
+good_tool         2.49    65
+bad_thinking      2.73    74
+dual              2.61    28
+
+Weakest areas (score 0-1, n=14):
+  [0] A7.5: Appeal to consequences (drill)
+  [0] A10.4: Flag-waving (drill)
+  [1] D1.1: Rapoport's Rules (what_if)
+  [1] D2.2: The Panglossian Slide (what_if)
+  [1] B2.2: Dutch Book arguments (what_if)
+  [1] D1.6: Deepities (drill)
+  [1] D1.8: Goulding (what_if)
+  [1] D2.3: Conversation-stoppers (what_if)
+  [1] A1.6: Arguments vs explanations (drill)
+  [1] A2.2: Propositional logic basics (drill)
+  [1] A4.1: Basic probability laws (drill)
+  [1] A6.6: Conceptual slippery slope (drill)
+  [1] B10.2: Behavioral GT (what_if)
+  [1] B10.4: Reputation (what_if)
+
+Strongest areas (score 3-4, n=98):
+  [4] E1.2: Confirmation bias
+  [4] B1.5: Minimax regret
+  [4] A7.3: Tu quoque
+  [4] B1.3: Maximax
+  [4] A5.1: Denying the antecedent
+  [4] A5.2: Affirming the consequent
+  [4] A7.6: Appeal to authority
+  [4] A7.11: Personal incredulity
+  [4] A7.16: Anecdotal evidence
+  [4] A9.3: The fallacy fallacy
+
+######################################################################
+MODE: CLASSIFY
+######################################################################
+
+======================================================================
+BENCHMARK REPORT: openai/gpt-oss-20b
+======================================================================
+Records evaluated: 167
+Mean score: 0.10 / 4.00
+Score distribution: Counter({0: 163, 4: 4})
+
+Track                                 Mean     n    0    1    2    3    4
+----------------------------------------------------------------------
+cognitive_biases                      0.00    24   24    0    0    0    0
+decision_theory                       0.39    31   28    0    0    0    3
+dennett_tools                         0.00    14   14    0    0    0    0
+game_theory                           0.22    18   17    0    0    0    1
+logic_critical_thinking               0.00    65   65    0    0    0    0
+microeconomics                        0.00    15   15    0    0    0    0
+
+Tier              Mean     n
+------------------------------
+drill             0.04   112
+what_if           0.08    49
+puzzle            1.33     6
+
+Pattern Type      Mean     n
+------------------------------
+good_tool         0.00    65
+bad_thinking      0.05    74
+dual              0.43    28
+
+Weakest areas (score 0-1, n=163):
+  [0] A7.1: Ad hominem (drill)
+  [0] A7.2: Straw man (drill)
+  [0] E1.2: Confirmation bias (what_if)
+  [0] B1.5: Minimax regret (drill)
+  [0] D1.1: Rapoport's Rules (what_if)
+  [0] A7.3: Tu quoque (drill)
+  [0] A7.4: Genetic fallacy (drill)
+  [0] A6.3: Begging the question (drill)
+  [0] A6.4: False dichotomy (drill)
+  [0] A8.5: Gambler's fallacy (drill)
+  [0] D2.1: Satisficing (what_if)
+  [0] D2.2: The Panglossian Slide (what_if)
+  [0] B6.1: Prisoner's Dilemma (drill)
+  [0] E1.3: Anchoring (drill)
+  [0] E1.20: Sunk cost fallacy (cognitive) (drill)
+
+Strongest areas (score 3-4, n=4):
+  [4] B3.7: St. Petersburg Paradox
+  [4] B5.4: Fourfold pattern
+  [4] B5.7: Endowment effect
+  [4] B8.4: Centipede Game
+
+######################################################################
+MODE: EXPLAIN
+######################################################################
+
+======================================================================
+BENCHMARK REPORT: openai/gpt-oss-20b
+======================================================================
+Records evaluated: 167
+Mean score: 2.47 / 4.00
+Score distribution: Counter({3: 58, 2: 43, 4: 34, 0: 16, 1: 16})
+
+Track                                 Mean     n    0    1    2    3    4
+----------------------------------------------------------------------
+cognitive_biases                      3.12    24    0    1    4   10    9
+decision_theory                       2.58    31    0    4    8   16    3
+dennett_tools                         1.29    14    4    2    8    0    0
+game_theory                           2.00    18    2    1   11    3    1
+logic_critical_thinking               2.65    65    8    5   10   21   21
+microeconomics                        2.07    15    2    3    2    8    0
+
+Tier              Mean     n
+------------------------------
+drill             2.73   112
+what_if           1.98    49
+puzzle            1.50     6
+
+Pattern Type      Mean     n
+------------------------------
+good_tool         1.78    65
+bad_thinking      3.12    74
+dual              2.32    28
+
+Weakest areas (score 0-1, n=32):
+  [0] D1.1: Rapoport's Rules (what_if)
+  [0] D1.3: Occam's Razor (drill)
+  [0] D1.7: The 'surely' operator (drill)
+  [0] D1.8: Goulding (what_if)
+  [0] A1.1: Identifying arguments (drill)
+  [0] A1.2: Premises and conclusions (drill)
+  [0] A1.3: Standard form (drill)
+  [0] A1.4: Principle of charity (what_if)
+  [0] A1.6: Arguments vs explanations (drill)
+  [0] A2.3: Truth tables (drill)
+  [0] A2.7: Logical equivalence (drill)
+  [0] A3.2: IBE (what_if)
+  [0] C1.2: Comparative advantage (what_if)
+  [0] C5.1: Supply, demand, equilibrium (drill)
+  [0] B6.3: Iterated PD and cooperation (what_if)
+
+Strongest areas (score 3-4, n=92):
+  [4] A7.1: Ad hominem
+  [4] A7.2: Straw man
+  [4] B1.5: Minimax regret
+  [4] A7.3: Tu quoque
+  [4] A7.4: Genetic fallacy
+  [4] A6.4: False dichotomy
+  [4] B6.1: Prisoner's Dilemma
+  [4] E1.3: Anchoring
+  [4] E1.20: Sunk cost fallacy (cognitive)
+  [4] E1.5: Availability heuristic

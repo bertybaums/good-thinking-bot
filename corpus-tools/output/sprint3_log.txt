@@ -1,0 +1,79 @@
+Sprint 3: Synthetic Decision Theory Generation
+Model: openai/gpt-oss-120b | Concurrency: 8
+Plan: 2000 examples across 16 codes
+Codes: B1.1, B1.2, B1.3, B1.4, B1.5, B2.1, B2.2, B3.1, B3.3, B3.4, B3.5, B4.1, B5.1, B5.2, B5.5, B5.8
+  Progress: 40/2000 (40 valid, 0 failed) [121s]
+  Progress: 80/2000 (80 valid, 0 failed) [201s]
+  Progress: 120/2000 (120 valid, 0 failed) [272s]
+  Progress: 160/2000 (160 valid, 0 failed) [383s]
+  Progress: 200/2000 (200 valid, 0 failed) [484s]
+  Progress: 240/2000 (239 valid, 1 failed) [603s]
+  Progress: 280/2000 (279 valid, 1 failed) [678s]
+  Progress: 320/2000 (319 valid, 1 failed) [781s]
+  Progress: 360/2000 (358 valid, 2 failed) [890s]
+  Progress: 400/2000 (397 valid, 3 failed) [1005s]
+  Progress: 440/2000 (436 valid, 4 failed) [1125s]
+  Progress: 480/2000 (475 valid, 5 failed) [1277s]
+  Progress: 520/2000 (515 valid, 5 failed) [1355s]
+  Progress: 560/2000 (555 valid, 5 failed) [1434s]
+  Progress: 600/2000 (595 valid, 5 failed) [1536s]
+  Progress: 640/2000 (635 valid, 5 failed) [1645s]
+  Progress: 680/2000 (675 valid, 5 failed) [1717s]
+  Progress: 720/2000 (714 valid, 6 failed) [1830s]
+  Progress: 760/2000 (754 valid, 6 failed) [1912s]
+  Progress: 800/2000 (793 valid, 7 failed) [2015s]
+  Progress: 840/2000 (831 valid, 9 failed) [2146s]
+  Progress: 880/2000 (870 valid, 10 failed) [2260s]
+  Progress: 920/2000 (910 valid, 10 failed) [2344s]
+  Progress: 960/2000 (950 valid, 10 failed) [2464s]
+  Progress: 1000/2000 (989 valid, 11 failed) [2579s]
+  Progress: 1040/2000 (1028 valid, 12 failed) [2693s]
+  Progress: 1080/2000 (1068 valid, 12 failed) [2799s]
+  Progress: 1120/2000 (1108 valid, 12 failed) [2885s]
+  Progress: 1160/2000 (1148 valid, 12 failed) [2951s]
+  Progress: 1200/2000 (1188 valid, 12 failed) [3046s]
+  Progress: 1240/2000 (1227 valid, 13 failed) [3158s]
+  Progress: 1280/2000 (1267 valid, 13 failed) [3270s]
+  Progress: 1320/2000 (1307 valid, 13 failed) [3354s]
+  Progress: 1360/2000 (1346 valid, 14 failed) [3477s]
+  Progress: 1400/2000 (1386 valid, 14 failed) [3560s]
+  Progress: 1440/2000 (1426 valid, 14 failed) [3671s]
+  Progress: 1480/2000 (1466 valid, 14 failed) [3754s]
+  Progress: 1520/2000 (1506 valid, 14 failed) [3851s]
+  Progress: 1560/2000 (1544 valid, 16 failed) [3964s]
+  Progress: 1600/2000 (1583 valid, 17 failed) [4086s]
+  Progress: 1640/2000 (1623 valid, 17 failed) [4180s]
+  Progress: 1680/2000 (1663 valid, 17 failed) [4295s]
+  Progress: 1720/2000 (1702 valid, 18 failed) [4419s]
+  Progress: 1760/2000 (1741 valid, 19 failed) [4549s]
+  Progress: 1800/2000 (1780 valid, 20 failed) [5461s]
+  Progress: 1840/2000 (1820 valid, 20 failed) [5542s]
+  Progress: 1880/2000 (1859 valid, 21 failed) [5661s]
+  Progress: 1920/2000 (1899 valid, 21 failed) [5777s]
+  Progress: 1960/2000 (1938 valid, 22 failed) [5901s]
+  Progress: 2000/2000 (1978 valid, 22 failed) [6006s]
+
+============================================================
+SPRINT 3 COMPLETE
+============================================================
+Total: 1978 valid, 22 failed (98.9% success)
+Time: 6006s
+Output: /Users/bbaum/Documents/claude-projects/good-thinking-bot/corpus-tools/output/synthetic_DT_sprint3.jsonl
+
+Per-code counts:
+  B1.1: 125
+  B1.2: 125
+  B1.3: 125
+  B1.4: 125
+  B1.5: 111
+  B2.1: 125
+  B2.2: 125
+  B3.1: 125
+  B3.3: 125
+  B3.4: 125
+  B3.5: 117
+  B4.1: 125
+  B5.1: 125
+  B5.2: 125
+  B5.5: 125
+  B5.8: 125

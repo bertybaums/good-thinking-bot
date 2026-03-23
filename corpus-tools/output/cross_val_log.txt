@@ -1,0 +1,92 @@
+Cross-validating anchor examples via MindRouter (qwen3.5-400b)
+  Anchors file: /Users/bbaum/Documents/claude-projects/good-thinking-bot/corpus-tools/output/anchors.jsonl
+  Model: qwen/qwen3.5-400b
+  Max concurrent: 4
+  Loaded 167 records
+  Taxonomy codes: 167
+
+  Progress: 10/167 records classified
+  Progress: 20/167 records classified
+  Progress: 30/167 records classified
+  Progress: 40/167 records classified
+  Progress: 50/167 records classified
+  Progress: 60/167 records classified
+  Progress: 70/167 records classified
+  Progress: 80/167 records classified
+  Progress: 90/167 records classified
+  Progress: 100/167 records classified
+  Progress: 110/167 records classified
+  Progress: 120/167 records classified
+  Progress: 130/167 records classified
+  Progress: 140/167 records classified
+  Progress: 150/167 records classified
+  Progress: 160/167 records classified
+  Progress: 167/167 records classified
+
+  Completed in 969.1s (5.8s per record)
+  Raw results saved to /Users/bbaum/Documents/claude-projects/good-thinking-bot/corpus-tools/output/cross_val_results.jsonl
+
+======================================================================
+CROSS-VALIDATION RESULTS: Anchors vs MindRouter (qwen3.5-400b)
+======================================================================
+
+  OVERALL AGREEMENT: 152/167 (91.0%)
+
+  AGREEMENT BY TRACK:
+    cognitive_biases                 20/ 24  ( 83.3%)
+    decision_theory                  29/ 31  ( 93.5%)
+    dennett_tools                    12/ 14  ( 85.7%)
+    game_theory                      17/ 18  ( 94.4%)
+    logic_critical_thinking          60/ 65  ( 92.3%)
+    microeconomics                   14/ 15  ( 93.3%)
+
+  TOP 10 CONFUSION PAIRS (actual → predicted):
+    E1.2 (Confirmation bias)                      → A7.12 (Special pleading (no true Scotsman))    [1x]
+    D2.2 (The Panglossian Slide)                  → A7.4 (Genetic fallacy)                         [1x]
+    E1.20 (Sunk cost fallacy (cognitive))         → B5.8 (Sunk cost fallacy (decision-theoretic))  [1x]
+    E1.9 (Optimism bias)                          → A8.2 (Base rate neglect)                       [1x]
+    D1.3 (Occam's Razor)                          → A3.2 (Inference to the best explanation (IBE))  [1x]
+    A2.7 (Logical equivalence and contradiction)  → A2.3 (Truth tables)                            [1x]
+    A3.1 (Statistical generalizations)            → A8.6 (Hasty generalization)                    [1x]
+    A4.2 (Conditional probability and Bayes' theorem) → A4.3 (Base rate reasoning)                     [1x]
+    A8.7 (False cause (post hoc / cum hoc))       → A3.5 (Correlation vs causation)                [1x]
+    A10.1 (Name calling / labeling)               → A7.1 (Ad hominem)                              [1x]
+
+  HIGH-CONFIDENCE ERRORS (confidence > 0.8 but wrong): 15
+    E1.21-001        actual=E1.21 (Framing effect (cognitive))  predicted=B5.5 (Framing effects)  conf=1.00
+      Reasoning: The scenario explicitly describes the classic 'Asian disease problem' where logically equivalent data (200 saved vs. 400
+    E1.20-001        actual=E1.20 (Sunk cost fallacy (cognitive))  predicted=B5.8 (Sunk cost fallacy (decision-theoretic))  conf=0.98
+      Reasoning: Brynn explicitly justifies continuing her failing project by citing the three years and money already spent ('sunk costs
+    A4.2-001         actual=A4.2 (Conditional probability and Bayes' theorem)  predicted=A4.3 (Base rate reasoning)  conf=0.98
+      Reasoning: The scenario explicitly presents a classic base rate problem (similar to the taxi-cab problem) where the player must com
+    A8.7-001         actual=A8.7 (False cause (post hoc / cum hoc))  predicted=A3.5 (Correlation vs causation)  conf=0.98
+      Reasoning: The scenario explicitly depicts Councillor Brix observing a statistical correlation between declining fishing boats and 
+    A10.1-001        actual=A10.1 (Name calling / labeling)  predicted=A7.1 (Ad hominem)  conf=0.98
+      Reasoning: Trader Gruff attacks Engineer Mira's character by labeling her an 'out-of-touch academic' and 'dreamer' rather than addr
+    E1.2-001         actual=E1.2 (Confirmation bias)  predicted=A7.12 (Special pleading (no true Scotsman))  conf=0.95
+      Reasoning: Maren engages in special pleading by creating ad hoc exceptions to dismiss counterevidence (claiming patients who didn't
+    D2.2-001         actual=D2.2 (The Panglossian Slide)  predicted=A7.4 (Genetic fallacy)  conf=0.95
+      Reasoning: Elder Maren dismisses the engineer's superior design solely because it is a 'foreign idea' (based on its origin) rather 
+    E1.9-001         actual=E1.9 (Optimism bias)  predicted=A8.2 (Base rate neglect)  conf=0.95
+      Reasoning: The scenario illustrates base rate neglect, where Jorin ignores the strong statistical evidence (base rate) that no prev
+    D1.3-001         actual=D1.3 (Occam's Razor)  predicted=A3.2 (Inference to the best explanation (IBE))  conf=0.95
+      Reasoning: The scenario presents two competing hypotheses (a ghost vs. squirrels) to explain the same set of observations (noises, 
+    A2.7-001         actual=A2.7 (Logical equivalence and contradiction)  predicted=A2.3 (Truth tables)  conf=0.95
+      Reasoning: The scenario explicitly instructs the player to use truth tables to determine if pairs of logical formulas are materiall
+    A3.1-001         actual=A3.1 (Statistical generalizations)  predicted=A8.6 (Hasty generalization)  conf=0.95
+      Reasoning: The scenario explicitly contrasts a poll based on a small, biased sample (Pollster A) with one based on a large, random 
+    C6.3-001         actual=C6.3 (Behavioral economics in markets)  predicted=B3.5 (Independence of Irrelevant Alternatives (IIA))  conf=0.95
+      Reasoning: The scenario describes the decoy effect, where adding an irrelevant alternative (the Barrel Mug) changes customer prefer
+    B2.3-001         actual=B2.3 (Axioms of probability (normative))  predicted=B2.2 (Dutch Book arguments)  conf=0.95
+      Reasoning: The scenario demonstrates a Dutch Book situation where the bookie's implied probabilities sum to 1.05 (greater than 1), 
+    B4.2-001         actual=B4.2 (Sure Thing Principle)  predicted=B4.6 (Disjunction effect)  conf=0.95
+      Reasoning: The scenario explicitly defines and illustrates the Disjunction Effect, where a decision-maker rejects an option under b
+    B9.3-001         actual=B9.3 (Evolution of cooperation)  predicted=B9.2 (Replicator dynamics)  conf=0.95
+      Reasoning: The scenario explicitly models how strategy proportions change in a population based on expected payoffs (E(Stag) vs E(H
+
+  CONFIDENCE STATS:
+    Mean confidence (all):     0.976
+    Mean confidence (correct): 0.977
+    Mean confidence (wrong):   0.961
+
+======================================================================
