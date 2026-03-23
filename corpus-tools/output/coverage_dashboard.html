@@ -1,0 +1,1727 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Good Thinking Bot — Coverage Dashboard</title>
+    <style>
+        body { font-family: -apple-system, sans-serif; margin: 2em; background: #fafafa; }
+        h1 { color: #333; }
+        .stats { display: flex; gap: 2em; margin: 1em 0; }
+        .stat { background: white; padding: 1em 2em; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+        .stat .num { font-size: 2em; font-weight: bold; color: #2563eb; }
+        table { border-collapse: collapse; width: 100%; background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+        th { background: #1e293b; color: white; padding: 0.75em 1em; text-align: left; }
+        td { padding: 0.5em 1em; border-bottom: 1px solid #e2e8f0; }
+        tr.gap { background: #fef2f2; }
+        tr.gap td { color: #991b1b; }
+        tr.partial { background: #fffbeb; }
+        tr.ok { background: white; }
+        tr:hover { background: #f1f5f9 !important; }
+    </style>
+</head>
+<body>
+    <h1>Good Thinking Bot — Coverage Dashboard</h1>
+
+    <div class="stats">
+        <div class="stat"><div class="num">6238</div>Total Records</div>
+        <div class="stat"><div class="num">167/167</div>Codes Covered</div>
+        <div class="stat"><div class="num">100%</div>Coverage</div>
+        <div class="stat"><div class="num">155</div>Gaps</div>
+    </div>
+
+    <h2>Coverage Matrix</h2>
+    <p>
+        <span style="background:#fef2f2;padding:2px 8px;border-radius:4px">Red = no examples</span>
+        <span style="background:#fffbeb;padding:2px 8px;border-radius:4px">Yellow = missing tiers</span>
+        <span style="background:white;padding:2px 8px;border-radius:4px;border:1px solid #e2e8f0">White = OK</span>
+    </p>
+    <table>
+        <thead>
+            <tr>
+                <th>Code</th>
+                <th>Label</th>
+                <th>Track</th>
+                <th>Type</th>
+                <th>Drill</th>
+                <th>What-If</th>
+                <th>Puzzle</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+        <tr class="partial">
+            <td>A1.1</td>
+            <td>Identifying arguments</td>
+            <td>logic_critical_thinking</td>
+            <td>good_tool</td>
+            <td>2</td>
+            <td>0</td>
+            <td>0</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>A1.2</td>
+            <td>Premises and conclusions</td>
+            <td>logic_critical_thinking</td>
+            <td>good_tool</td>
+            <td>2</td>
+            <td>0</td>
+            <td>0</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>A1.3</td>
+            <td>Standard form</td>
+            <td>logic_critical_thinking</td>
+            <td>good_tool</td>
+            <td>2</td>
+            <td>0</td>
+            <td>0</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>A1.4</td>
+            <td>Principle of charity</td>
+            <td>logic_critical_thinking</td>
+            <td>good_tool</td>
+            <td>0</td>
+            <td>2</td>
+            <td>0</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>A1.5</td>
+            <td>Missing premises</td>
+            <td>logic_critical_thinking</td>
+            <td>good_tool</td>
+            <td>0</td>
+            <td>2</td>
+            <td>0</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>A1.6</td>
+            <td>Arguments vs explanations</td>
+            <td>logic_critical_thinking</td>
+            <td>good_tool</td>
+            <td>2</td>
+            <td>0</td>
+            <td>0</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>A1.7</td>
+            <td>Argument diagramming</td>
+            <td>logic_critical_thinking</td>
+            <td>good_tool</td>
+            <td>2</td>
+            <td>0</td>
+            <td>0</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>A10.1</td>
+            <td>Name calling / labeling</td>
+            <td>logic_critical_thinking</td>
+            <td>bad_thinking</td>
+            <td>1060</td>
+            <td>0</td>
+            <td>0</td>
+            <td><strong>1060</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>A10.2</td>
+            <td>Repetition</td>
+            <td>logic_critical_thinking</td>
+            <td>bad_thinking</td>
+            <td>623</td>
+            <td>0</td>
+            <td>0</td>
+            <td><strong>623</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>A10.3</td>
+            <td>Whataboutism / red herring</td>
+            <td>logic_critical_thinking</td>
+            <td>bad_thinking</td>
+            <td>2</td>
+            <td>0</td>
+            <td>0</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>A10.4</td>
+            <td>Flag-waving</td>
+            <td>logic_critical_thinking</td>
+            <td>bad_thinking</td>
+            <td>231</td>
+            <td>0</td>
+            <td>0</td>
+            <td><strong>231</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>A10.5</td>
+            <td>Thought-terminating cliché</td>
+            <td>logic_critical_thinking</td>
+            <td>bad_thinking</td>
+            <td>131</td>
+            <td>0</td>
+            <td>0</td>
+            <td><strong>131</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>A10.6</td>
+            <td>Exaggeration / minimization</td>
+            <td>logic_critical_thinking</td>
+            <td>bad_thinking</td>
+            <td>468</td>
+            <td>0</td>
+            <td>0</td>
+            <td><strong>468</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>A10.7</td>
+            <td>Doubt casting</td>
+            <td>logic_critical_thinking</td>
+            <td>bad_thinking</td>
+            <td>495</td>
+            <td>0</td>
+            <td>0</td>
+            <td><strong>495</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>A2.1</td>
+            <td>Validity and soundness</td>
+            <td>logic_critical_thinking</td>
+            <td>good_tool</td>
+            <td>2</td>
+            <td>0</td>
+            <td>0</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>A2.2</td>
+            <td>Propositional logic basics</td>
+            <td>logic_critical_thinking</td>
+            <td>good_tool</td>
+            <td>2</td>
+            <td>0</td>
+            <td>0</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>A2.3</td>
+            <td>Truth tables</td>
+            <td>logic_critical_thinking</td>
+            <td>good_tool</td>
+            <td>2</td>
+            <td>0</td>
+            <td>0</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>A2.4</td>
+            <td>Inference rules (modus ponens, modus tollens)</td>
+            <td>logic_critical_thinking</td>
+            <td>good_tool</td>
+            <td>2</td>
+            <td>0</td>
+            <td>0</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>A2.5</td>
+            <td>Natural deduction proofs</td>
+            <td>logic_critical_thinking</td>
+            <td>good_tool</td>
+            <td>0</td>
+            <td>2</td>
+            <td>0</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>A2.6</td>
+            <td>Categorical logic</td>
+            <td>logic_critical_thinking</td>
+            <td>good_tool</td>
+            <td>2</td>
+            <td>0</td>
+            <td>0</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>A2.7</td>
+            <td>Logical equivalence and contradiction</td>
+            <td>logic_critical_thinking</td>
+            <td>good_tool</td>
+            <td>2</td>
+            <td>0</td>
+            <td>0</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>A2.8</td>
+            <td>Deductive vs inductive distinction</td>
+            <td>logic_critical_thinking</td>
+            <td>good_tool</td>
+            <td>2</td>
+            <td>0</td>
+            <td>0</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>A3.1</td>
+            <td>Statistical generalizations</td>
+            <td>logic_critical_thinking</td>
+            <td>good_tool</td>
+            <td>2</td>
+            <td>0</td>
+            <td>0</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>A3.2</td>
+            <td>Inference to the best explanation (IBE)</td>
+            <td>logic_critical_thinking</td>
+            <td>good_tool</td>
+            <td>0</td>
+            <td>2</td>
+            <td>0</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>A3.3</td>
+            <td>Argument by analogy</td>
+            <td>logic_critical_thinking</td>
+            <td>good_tool</td>
+            <td>0</td>
+            <td>2</td>
+            <td>0</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>A3.4</td>
+            <td>Causal reasoning</td>
+            <td>logic_critical_thinking</td>
+            <td>good_tool</td>
+            <td>2</td>
+            <td>0</td>
+            <td>0</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>A3.5</td>
+            <td>Correlation vs causation</td>
+            <td>logic_critical_thinking</td>
+            <td>good_tool</td>
+            <td>2</td>
+            <td>0</td>
+            <td>0</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>A4.1</td>
+            <td>Basic probability laws</td>
+            <td>logic_critical_thinking</td>
+            <td>good_tool</td>
+            <td>2</td>
+            <td>0</td>
+            <td>0</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>A4.2</td>
+            <td>Conditional probability and Bayes' theorem</td>
+            <td>logic_critical_thinking</td>
+            <td>good_tool</td>
+            <td>0</td>
+            <td>2</td>
+            <td>0</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>A4.3</td>
+            <td>Base rate reasoning</td>
+            <td>logic_critical_thinking</td>
+            <td>good_tool</td>
+            <td>2</td>
+            <td>0</td>
+            <td>0</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>A5.1</td>
+            <td>Denying the antecedent</td>
+            <td>logic_critical_thinking</td>
+            <td>bad_thinking</td>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+            <td><strong>1</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>A5.2</td>
+            <td>Affirming the consequent</td>
+            <td>logic_critical_thinking</td>
+            <td>bad_thinking</td>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+            <td><strong>1</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>A5.3</td>
+            <td>Causal slippery slope (formal)</td>
+            <td>logic_critical_thinking</td>
+            <td>bad_thinking</td>
+            <td>2</td>
+            <td>0</td>
+            <td>0</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>A6.1</td>
+            <td>Composition</td>
+            <td>logic_critical_thinking</td>
+            <td>bad_thinking</td>
+            <td>2</td>
+            <td>0</td>
+            <td>0</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>A6.2</td>
+            <td>Division</td>
+            <td>logic_critical_thinking</td>
+            <td>bad_thinking</td>
+            <td>2</td>
+            <td>0</td>
+            <td>0</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>A6.3</td>
+            <td>Begging the question</td>
+            <td>logic_critical_thinking</td>
+            <td>bad_thinking</td>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+            <td><strong>1</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>A6.4</td>
+            <td>False dichotomy (black-or-white)</td>
+            <td>logic_critical_thinking</td>
+            <td>bad_thinking</td>
+            <td>108</td>
+            <td>0</td>
+            <td>0</td>
+            <td><strong>108</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>A6.5</td>
+            <td>Equivocation</td>
+            <td>logic_critical_thinking</td>
+            <td>bad_thinking</td>
+            <td>2</td>
+            <td>0</td>
+            <td>0</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>A6.6</td>
+            <td>Conceptual slippery slope</td>
+            <td>logic_critical_thinking</td>
+            <td>bad_thinking</td>
+            <td>2</td>
+            <td>0</td>
+            <td>0</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>A7.1</td>
+            <td>Ad hominem</td>
+            <td>logic_critical_thinking</td>
+            <td>bad_thinking</td>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+            <td><strong>1</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>A7.10</td>
+            <td>Burden of proof</td>
+            <td>logic_critical_thinking</td>
+            <td>bad_thinking</td>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+            <td><strong>1</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>A7.11</td>
+            <td>Personal incredulity</td>
+            <td>logic_critical_thinking</td>
+            <td>bad_thinking</td>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+            <td><strong>1</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>A7.12</td>
+            <td>Special pleading (no true Scotsman)</td>
+            <td>logic_critical_thinking</td>
+            <td>bad_thinking</td>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+            <td><strong>1</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>A7.13</td>
+            <td>Loaded question</td>
+            <td>logic_critical_thinking</td>
+            <td>bad_thinking</td>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+            <td><strong>1</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>A7.14</td>
+            <td>Texas sharpshooter</td>
+            <td>logic_critical_thinking</td>
+            <td>bad_thinking</td>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+            <td><strong>1</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>A7.15</td>
+            <td>Middle ground (false compromise)</td>
+            <td>logic_critical_thinking</td>
+            <td>bad_thinking</td>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+            <td><strong>1</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>A7.16</td>
+            <td>Anecdotal evidence</td>
+            <td>logic_critical_thinking</td>
+            <td>bad_thinking</td>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+            <td><strong>1</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>A7.2</td>
+            <td>Straw man</td>
+            <td>logic_critical_thinking</td>
+            <td>bad_thinking</td>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+            <td><strong>1</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>A7.3</td>
+            <td>Tu quoque</td>
+            <td>logic_critical_thinking</td>
+            <td>bad_thinking</td>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+            <td><strong>1</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>A7.4</td>
+            <td>Genetic fallacy</td>
+            <td>logic_critical_thinking</td>
+            <td>bad_thinking</td>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+            <td><strong>1</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>A7.5</td>
+            <td>Appeal to consequences</td>
+            <td>logic_critical_thinking</td>
+            <td>bad_thinking</td>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+            <td><strong>1</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>A7.6</td>
+            <td>Appeal to authority</td>
+            <td>logic_critical_thinking</td>
+            <td>bad_thinking</td>
+            <td>145</td>
+            <td>0</td>
+            <td>0</td>
+            <td><strong>145</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>A7.7</td>
+            <td>Appeal to emotion</td>
+            <td>logic_critical_thinking</td>
+            <td>bad_thinking</td>
+            <td>295</td>
+            <td>0</td>
+            <td>0</td>
+            <td><strong>295</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>A7.8</td>
+            <td>Appeal to nature</td>
+            <td>logic_critical_thinking</td>
+            <td>bad_thinking</td>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+            <td><strong>1</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>A7.9</td>
+            <td>Bandwagon (appeal to popularity)</td>
+            <td>logic_critical_thinking</td>
+            <td>bad_thinking</td>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+            <td><strong>1</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>A8.1</td>
+            <td>Conjunction fallacy</td>
+            <td>logic_critical_thinking</td>
+            <td>bad_thinking</td>
+            <td>2</td>
+            <td>0</td>
+            <td>0</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>A8.2</td>
+            <td>Base rate neglect</td>
+            <td>logic_critical_thinking</td>
+            <td>bad_thinking</td>
+            <td>2</td>
+            <td>0</td>
+            <td>0</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>A8.3</td>
+            <td>Law of small numbers</td>
+            <td>logic_critical_thinking</td>
+            <td>bad_thinking</td>
+            <td>2</td>
+            <td>0</td>
+            <td>0</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>A8.4</td>
+            <td>Regression to the mean</td>
+            <td>logic_critical_thinking</td>
+            <td>bad_thinking</td>
+            <td>2</td>
+            <td>0</td>
+            <td>0</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>A8.5</td>
+            <td>Gambler's fallacy</td>
+            <td>logic_critical_thinking</td>
+            <td>bad_thinking</td>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+            <td><strong>1</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>A8.6</td>
+            <td>Hasty generalization</td>
+            <td>logic_critical_thinking</td>
+            <td>bad_thinking</td>
+            <td>2</td>
+            <td>0</td>
+            <td>0</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>A8.7</td>
+            <td>False cause (post hoc / cum hoc)</td>
+            <td>logic_critical_thinking</td>
+            <td>bad_thinking</td>
+            <td>211</td>
+            <td>0</td>
+            <td>0</td>
+            <td><strong>211</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>A9.1</td>
+            <td>Evaluative language and presupposition</td>
+            <td>logic_critical_thinking</td>
+            <td>bad_thinking</td>
+            <td>2124</td>
+            <td>0</td>
+            <td>0</td>
+            <td><strong>2124</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>A9.2</td>
+            <td>Assuring, guarding, and discounting</td>
+            <td>logic_critical_thinking</td>
+            <td>dual</td>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+            <td><strong>1</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>A9.3</td>
+            <td>The fallacy fallacy</td>
+            <td>logic_critical_thinking</td>
+            <td>bad_thinking</td>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+            <td><strong>1</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>B1.1</td>
+            <td>Decision matrices</td>
+            <td>decision_theory</td>
+            <td>good_tool</td>
+            <td>2</td>
+            <td>0</td>
+            <td>0</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>B1.2</td>
+            <td>Dominance reasoning</td>
+            <td>decision_theory</td>
+            <td>good_tool</td>
+            <td>2</td>
+            <td>0</td>
+            <td>0</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>B1.3</td>
+            <td>Maximax</td>
+            <td>decision_theory</td>
+            <td>good_tool</td>
+            <td>2</td>
+            <td>0</td>
+            <td>0</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>B1.4</td>
+            <td>Maximin</td>
+            <td>decision_theory</td>
+            <td>good_tool</td>
+            <td>2</td>
+            <td>0</td>
+            <td>0</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>B1.5</td>
+            <td>Minimax regret</td>
+            <td>decision_theory</td>
+            <td>good_tool</td>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+            <td><strong>1</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>B10.1</td>
+            <td>Signaling and costly signals</td>
+            <td>game_theory</td>
+            <td>good_tool</td>
+            <td>0</td>
+            <td>2</td>
+            <td>0</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>B10.2</td>
+            <td>Behavioral game theory</td>
+            <td>game_theory</td>
+            <td>dual</td>
+            <td>0</td>
+            <td>2</td>
+            <td>0</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>B10.3</td>
+            <td>Commitment and precommitment</td>
+            <td>game_theory</td>
+            <td>good_tool</td>
+            <td>0</td>
+            <td>2</td>
+            <td>0</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>B10.4</td>
+            <td>Reputation and repeated games</td>
+            <td>game_theory</td>
+            <td>good_tool</td>
+            <td>0</td>
+            <td>2</td>
+            <td>0</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>B2.1</td>
+            <td>Betting rates and credences</td>
+            <td>decision_theory</td>
+            <td>good_tool</td>
+            <td>2</td>
+            <td>0</td>
+            <td>0</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>B2.2</td>
+            <td>Dutch Book arguments</td>
+            <td>decision_theory</td>
+            <td>good_tool</td>
+            <td>0</td>
+            <td>2</td>
+            <td>0</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>B2.3</td>
+            <td>Axioms of probability (normative)</td>
+            <td>decision_theory</td>
+            <td>good_tool</td>
+            <td>2</td>
+            <td>0</td>
+            <td>0</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>B2.4</td>
+            <td>Subjective vs objective probability</td>
+            <td>decision_theory</td>
+            <td>good_tool</td>
+            <td>0</td>
+            <td>2</td>
+            <td>0</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>B2.5</td>
+            <td>Principal Principle</td>
+            <td>decision_theory</td>
+            <td>good_tool</td>
+            <td>0</td>
+            <td>2</td>
+            <td>0</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>B3.1</td>
+            <td>MEU formula and calculation</td>
+            <td>decision_theory</td>
+            <td>good_tool</td>
+            <td>2</td>
+            <td>0</td>
+            <td>0</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>B3.2</td>
+            <td>Cardinal vs ordinal utility</td>
+            <td>decision_theory</td>
+            <td>good_tool</td>
+            <td>2</td>
+            <td>0</td>
+            <td>0</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>B3.3</td>
+            <td>Risk aversion and utility curves</td>
+            <td>decision_theory</td>
+            <td>good_tool</td>
+            <td>0</td>
+            <td>2</td>
+            <td>0</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>B3.4</td>
+            <td>Transitivity and money pumps</td>
+            <td>decision_theory</td>
+            <td>good_tool</td>
+            <td>2</td>
+            <td>0</td>
+            <td>0</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>B3.5</td>
+            <td>Independence of Irrelevant Alternatives (IIA)</td>
+            <td>decision_theory</td>
+            <td>good_tool</td>
+            <td>0</td>
+            <td>2</td>
+            <td>0</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>B3.6</td>
+            <td>Pascal's Wager</td>
+            <td>decision_theory</td>
+            <td>dual</td>
+            <td>0</td>
+            <td>0</td>
+            <td>2</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>B3.7</td>
+            <td>St. Petersburg Paradox</td>
+            <td>decision_theory</td>
+            <td>dual</td>
+            <td>0</td>
+            <td>0</td>
+            <td>2</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>B4.1</td>
+            <td>Allais Paradox</td>
+            <td>decision_theory</td>
+            <td>dual</td>
+            <td>0</td>
+            <td>2</td>
+            <td>0</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>B4.2</td>
+            <td>Sure Thing Principle</td>
+            <td>decision_theory</td>
+            <td>good_tool</td>
+            <td>0</td>
+            <td>2</td>
+            <td>0</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>B4.3</td>
+            <td>Newcomb's Problem</td>
+            <td>decision_theory</td>
+            <td>dual</td>
+            <td>0</td>
+            <td>0</td>
+            <td>2</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>B4.4</td>
+            <td>Ellsberg Paradox</td>
+            <td>decision_theory</td>
+            <td>dual</td>
+            <td>0</td>
+            <td>2</td>
+            <td>0</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>B4.5</td>
+            <td>Reflection Effect</td>
+            <td>decision_theory</td>
+            <td>dual</td>
+            <td>0</td>
+            <td>2</td>
+            <td>0</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>B4.6</td>
+            <td>Disjunction effect</td>
+            <td>decision_theory</td>
+            <td>dual</td>
+            <td>0</td>
+            <td>2</td>
+            <td>0</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>B5.1</td>
+            <td>Reference points</td>
+            <td>decision_theory</td>
+            <td>dual</td>
+            <td>2</td>
+            <td>0</td>
+            <td>0</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>B5.2</td>
+            <td>Loss aversion</td>
+            <td>decision_theory</td>
+            <td>dual</td>
+            <td>2</td>
+            <td>0</td>
+            <td>0</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>B5.3</td>
+            <td>Probability weighting</td>
+            <td>decision_theory</td>
+            <td>dual</td>
+            <td>0</td>
+            <td>2</td>
+            <td>0</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>B5.4</td>
+            <td>Fourfold pattern of risk attitudes</td>
+            <td>decision_theory</td>
+            <td>dual</td>
+            <td>0</td>
+            <td>2</td>
+            <td>0</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>B5.5</td>
+            <td>Framing effects</td>
+            <td>decision_theory</td>
+            <td>bad_thinking</td>
+            <td>2</td>
+            <td>0</td>
+            <td>0</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>B5.6</td>
+            <td>Mental accounting</td>
+            <td>decision_theory</td>
+            <td>bad_thinking</td>
+            <td>2</td>
+            <td>0</td>
+            <td>0</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>B5.7</td>
+            <td>Endowment effect</td>
+            <td>decision_theory</td>
+            <td>bad_thinking</td>
+            <td>2</td>
+            <td>0</td>
+            <td>0</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>B5.8</td>
+            <td>Sunk cost fallacy (decision-theoretic)</td>
+            <td>decision_theory</td>
+            <td>bad_thinking</td>
+            <td>2</td>
+            <td>0</td>
+            <td>0</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>B6.1</td>
+            <td>Prisoner's Dilemma</td>
+            <td>game_theory</td>
+            <td>dual</td>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+            <td><strong>1</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>B6.2</td>
+            <td>Nash equilibrium</td>
+            <td>game_theory</td>
+            <td>good_tool</td>
+            <td>2</td>
+            <td>0</td>
+            <td>0</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>B6.3</td>
+            <td>Iterated PD and cooperation</td>
+            <td>game_theory</td>
+            <td>good_tool</td>
+            <td>0</td>
+            <td>2</td>
+            <td>0</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>B7.1</td>
+            <td>Stag Hunt</td>
+            <td>game_theory</td>
+            <td>dual</td>
+            <td>2</td>
+            <td>0</td>
+            <td>0</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>B7.2</td>
+            <td>Battle of the Sexes</td>
+            <td>game_theory</td>
+            <td>dual</td>
+            <td>2</td>
+            <td>0</td>
+            <td>0</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>B7.3</td>
+            <td>Focal points (Schelling points)</td>
+            <td>game_theory</td>
+            <td>good_tool</td>
+            <td>0</td>
+            <td>2</td>
+            <td>0</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>B7.4</td>
+            <td>Convention (Lewis)</td>
+            <td>game_theory</td>
+            <td>good_tool</td>
+            <td>0</td>
+            <td>2</td>
+            <td>0</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>B8.1</td>
+            <td>Game trees and extensive form</td>
+            <td>game_theory</td>
+            <td>good_tool</td>
+            <td>2</td>
+            <td>0</td>
+            <td>0</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>B8.2</td>
+            <td>Backward induction</td>
+            <td>game_theory</td>
+            <td>good_tool</td>
+            <td>2</td>
+            <td>0</td>
+            <td>0</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>B8.3</td>
+            <td>Subgame perfect equilibrium</td>
+            <td>game_theory</td>
+            <td>good_tool</td>
+            <td>0</td>
+            <td>2</td>
+            <td>0</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>B8.4</td>
+            <td>Centipede Game paradox</td>
+            <td>game_theory</td>
+            <td>dual</td>
+            <td>0</td>
+            <td>0</td>
+            <td>2</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>B9.1</td>
+            <td>Evolutionarily Stable Strategy (ESS)</td>
+            <td>game_theory</td>
+            <td>good_tool</td>
+            <td>0</td>
+            <td>2</td>
+            <td>0</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>B9.2</td>
+            <td>Replicator dynamics</td>
+            <td>game_theory</td>
+            <td>good_tool</td>
+            <td>0</td>
+            <td>2</td>
+            <td>0</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>B9.3</td>
+            <td>Evolution of cooperation</td>
+            <td>game_theory</td>
+            <td>good_tool</td>
+            <td>0</td>
+            <td>2</td>
+            <td>0</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>C1.1</td>
+            <td>Opportunity cost</td>
+            <td>microeconomics</td>
+            <td>good_tool</td>
+            <td>2</td>
+            <td>0</td>
+            <td>0</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>C1.2</td>
+            <td>Comparative advantage</td>
+            <td>microeconomics</td>
+            <td>good_tool</td>
+            <td>0</td>
+            <td>2</td>
+            <td>0</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>C2.1</td>
+            <td>Constrained optimization</td>
+            <td>microeconomics</td>
+            <td>good_tool</td>
+            <td>2</td>
+            <td>0</td>
+            <td>0</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>C2.2</td>
+            <td>Marginal analysis</td>
+            <td>microeconomics</td>
+            <td>good_tool</td>
+            <td>2</td>
+            <td>0</td>
+            <td>0</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>C3.1</td>
+            <td>Public goods and free riding</td>
+            <td>microeconomics</td>
+            <td>dual</td>
+            <td>0</td>
+            <td>2</td>
+            <td>0</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>C3.2</td>
+            <td>Commons problems</td>
+            <td>microeconomics</td>
+            <td>dual</td>
+            <td>0</td>
+            <td>2</td>
+            <td>0</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>C4.1</td>
+            <td>Bargaining and fairness</td>
+            <td>microeconomics</td>
+            <td>good_tool</td>
+            <td>0</td>
+            <td>2</td>
+            <td>0</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>C4.2</td>
+            <td>Principal-agent problems</td>
+            <td>microeconomics</td>
+            <td>dual</td>
+            <td>0</td>
+            <td>2</td>
+            <td>0</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>C5.1</td>
+            <td>Supply, demand, and equilibrium</td>
+            <td>microeconomics</td>
+            <td>good_tool</td>
+            <td>2</td>
+            <td>0</td>
+            <td>0</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>C5.2</td>
+            <td>Price controls and deadweight loss</td>
+            <td>microeconomics</td>
+            <td>dual</td>
+            <td>2</td>
+            <td>0</td>
+            <td>0</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>C6.1</td>
+            <td>Externalities</td>
+            <td>microeconomics</td>
+            <td>dual</td>
+            <td>2</td>
+            <td>0</td>
+            <td>0</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>C6.2</td>
+            <td>Information asymmetry (markets)</td>
+            <td>microeconomics</td>
+            <td>dual</td>
+            <td>0</td>
+            <td>2</td>
+            <td>0</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>C6.3</td>
+            <td>Behavioral economics in markets</td>
+            <td>microeconomics</td>
+            <td>dual</td>
+            <td>0</td>
+            <td>2</td>
+            <td>0</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>C7.1</td>
+            <td>Broken window fallacy</td>
+            <td>microeconomics</td>
+            <td>bad_thinking</td>
+            <td>2</td>
+            <td>0</td>
+            <td>0</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>C7.2</td>
+            <td>Zero-sum thinking (economic)</td>
+            <td>microeconomics</td>
+            <td>bad_thinking</td>
+            <td>2</td>
+            <td>0</td>
+            <td>0</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>D1.1</td>
+            <td>Rapoport's Rules</td>
+            <td>dennett_tools</td>
+            <td>good_tool</td>
+            <td>0</td>
+            <td>1</td>
+            <td>0</td>
+            <td><strong>1</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>D1.2</td>
+            <td>Reductio ad absurdum</td>
+            <td>dennett_tools</td>
+            <td>good_tool</td>
+            <td>2</td>
+            <td>0</td>
+            <td>0</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>D1.3</td>
+            <td>Occam's Razor</td>
+            <td>dennett_tools</td>
+            <td>good_tool</td>
+            <td>2</td>
+            <td>0</td>
+            <td>0</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>D1.4</td>
+            <td>Occam's Broom</td>
+            <td>dennett_tools</td>
+            <td>bad_thinking</td>
+            <td>2</td>
+            <td>0</td>
+            <td>0</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>D1.5</td>
+            <td>Jootsing (jumping out of the system)</td>
+            <td>dennett_tools</td>
+            <td>good_tool</td>
+            <td>0</td>
+            <td>2</td>
+            <td>0</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>D1.6</td>
+            <td>Deepities</td>
+            <td>dennett_tools</td>
+            <td>bad_thinking</td>
+            <td>2</td>
+            <td>0</td>
+            <td>0</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>D1.7</td>
+            <td>The 'surely' operator</td>
+            <td>dennett_tools</td>
+            <td>bad_thinking</td>
+            <td>2</td>
+            <td>0</td>
+            <td>0</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>D1.8</td>
+            <td>Goulding (going out on a limb)</td>
+            <td>dennett_tools</td>
+            <td>good_tool</td>
+            <td>0</td>
+            <td>2</td>
+            <td>0</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>D2.1</td>
+            <td>Satisficing</td>
+            <td>dennett_tools</td>
+            <td>good_tool</td>
+            <td>0</td>
+            <td>1</td>
+            <td>0</td>
+            <td><strong>1</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>D2.2</td>
+            <td>The Panglossian Slide</td>
+            <td>dennett_tools</td>
+            <td>bad_thinking</td>
+            <td>0</td>
+            <td>1</td>
+            <td>0</td>
+            <td><strong>1</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>D2.3</td>
+            <td>Conversation-stoppers</td>
+            <td>dennett_tools</td>
+            <td>dual</td>
+            <td>0</td>
+            <td>2</td>
+            <td>0</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>D2.4</td>
+            <td>Wolf's Dilemma</td>
+            <td>dennett_tools</td>
+            <td>dual</td>
+            <td>0</td>
+            <td>0</td>
+            <td>2</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>D2.5</td>
+            <td>The Frame Problem</td>
+            <td>dennett_tools</td>
+            <td>dual</td>
+            <td>0</td>
+            <td>0</td>
+            <td>2</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>D2.6</td>
+            <td>The Moral First Aid Manual</td>
+            <td>dennett_tools</td>
+            <td>good_tool</td>
+            <td>0</td>
+            <td>2</td>
+            <td>0</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="ok">
+            <td>E1.1</td>
+            <td>Fundamental attribution error</td>
+            <td>cognitive_biases</td>
+            <td>bad_thinking</td>
+            <td>4</td>
+            <td>2</td>
+            <td>1</td>
+            <td><strong>7</strong></td>
+        </tr>
+        <tr class="ok">
+            <td>E1.10</td>
+            <td>Pessimism bias</td>
+            <td>cognitive_biases</td>
+            <td>bad_thinking</td>
+            <td>4</td>
+            <td>2</td>
+            <td>1</td>
+            <td><strong>7</strong></td>
+        </tr>
+        <tr class="ok">
+            <td>E1.11</td>
+            <td>Negativity bias</td>
+            <td>cognitive_biases</td>
+            <td>bad_thinking</td>
+            <td>4</td>
+            <td>1</td>
+            <td>1</td>
+            <td><strong>6</strong></td>
+        </tr>
+        <tr class="ok">
+            <td>E1.12</td>
+            <td>Groupthink</td>
+            <td>cognitive_biases</td>
+            <td>bad_thinking</td>
+            <td>2</td>
+            <td>4</td>
+            <td>1</td>
+            <td><strong>7</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>E1.13</td>
+            <td>Placebo effect</td>
+            <td>cognitive_biases</td>
+            <td>dual</td>
+            <td>2</td>
+            <td>0</td>
+            <td>0</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>E1.14</td>
+            <td>Reactance</td>
+            <td>cognitive_biases</td>
+            <td>bad_thinking</td>
+            <td>2</td>
+            <td>0</td>
+            <td>0</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>E1.15</td>
+            <td>Spotlight effect</td>
+            <td>cognitive_biases</td>
+            <td>bad_thinking</td>
+            <td>2</td>
+            <td>0</td>
+            <td>0</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>E1.16</td>
+            <td>Just-world hypothesis</td>
+            <td>cognitive_biases</td>
+            <td>bad_thinking</td>
+            <td>0</td>
+            <td>2</td>
+            <td>0</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>E1.17</td>
+            <td>Declinism</td>
+            <td>cognitive_biases</td>
+            <td>bad_thinking</td>
+            <td>2</td>
+            <td>0</td>
+            <td>0</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>E1.18</td>
+            <td>Backfire effect</td>
+            <td>cognitive_biases</td>
+            <td>bad_thinking</td>
+            <td>0</td>
+            <td>2</td>
+            <td>0</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>E1.19</td>
+            <td>Barnum effect (Forer effect)</td>
+            <td>cognitive_biases</td>
+            <td>bad_thinking</td>
+            <td>2</td>
+            <td>0</td>
+            <td>0</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="ok">
+            <td>E1.2</td>
+            <td>Confirmation bias</td>
+            <td>cognitive_biases</td>
+            <td>bad_thinking</td>
+            <td>2</td>
+            <td>3</td>
+            <td>1</td>
+            <td><strong>6</strong></td>
+        </tr>
+        <tr class="ok">
+            <td>E1.20</td>
+            <td>Sunk cost fallacy (cognitive)</td>
+            <td>cognitive_biases</td>
+            <td>bad_thinking</td>
+            <td>3</td>
+            <td>2</td>
+            <td>1</td>
+            <td><strong>6</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>E1.21</td>
+            <td>Framing effect (cognitive)</td>
+            <td>cognitive_biases</td>
+            <td>bad_thinking</td>
+            <td>2</td>
+            <td>0</td>
+            <td>0</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>E1.22</td>
+            <td>In-group bias</td>
+            <td>cognitive_biases</td>
+            <td>bad_thinking</td>
+            <td>2</td>
+            <td>0</td>
+            <td>0</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>E1.23</td>
+            <td>Halo effect</td>
+            <td>cognitive_biases</td>
+            <td>bad_thinking</td>
+            <td>2</td>
+            <td>0</td>
+            <td>0</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>E1.24</td>
+            <td>Bystander effect</td>
+            <td>cognitive_biases</td>
+            <td>bad_thinking</td>
+            <td>2</td>
+            <td>0</td>
+            <td>0</td>
+            <td><strong>2</strong></td>
+        </tr>
+        <tr class="ok">
+            <td>E1.3</td>
+            <td>Anchoring</td>
+            <td>cognitive_biases</td>
+            <td>bad_thinking</td>
+            <td>3</td>
+            <td>2</td>
+            <td>1</td>
+            <td><strong>6</strong></td>
+        </tr>
+        <tr class="partial">
+            <td>E1.4</td>
+            <td>Dunning-Kruger effect</td>
+            <td>cognitive_biases</td>
+            <td>bad_thinking</td>
+            <td>2</td>
+            <td>4</td>
+            <td>0</td>
+            <td><strong>6</strong></td>
+        </tr>
+        <tr class="ok">
+            <td>E1.5</td>
+            <td>Availability heuristic</td>
+            <td>cognitive_biases</td>
+            <td>bad_thinking</td>
+            <td>4</td>
+            <td>2</td>
+            <td>1</td>
+            <td><strong>7</strong></td>
+        </tr>
+        <tr class="ok">
+            <td>E1.6</td>
+            <td>Belief bias</td>
+            <td>cognitive_biases</td>
+            <td>bad_thinking</td>
+            <td>4</td>
+            <td>2</td>
+            <td>1</td>
+            <td><strong>7</strong></td>
+        </tr>
+        <tr class="ok">
+            <td>E1.7</td>
+            <td>Self-serving bias</td>
+            <td>cognitive_biases</td>
+            <td>bad_thinking</td>
+            <td>4</td>
+            <td>2</td>
+            <td>1</td>
+            <td><strong>7</strong></td>
+        </tr>
+        <tr class="ok">
+            <td>E1.8</td>
+            <td>Curse of knowledge</td>
+            <td>cognitive_biases</td>
+            <td>bad_thinking</td>
+            <td>2</td>
+            <td>4</td>
+            <td>1</td>
+            <td><strong>7</strong></td>
+        </tr>
+        <tr class="ok">
+            <td>E1.9</td>
+            <td>Optimism bias</td>
+            <td>cognitive_biases</td>
+            <td>bad_thinking</td>
+            <td>4</td>
+            <td>2</td>
+            <td>1</td>
+            <td><strong>7</strong></td>
+        </tr>
+        </tbody>
+    </table>
+
+    <p style="color:#999;margin-top:2em">Generated by 06_coverage_dashboard.py</p>
+</body>
+</html>
