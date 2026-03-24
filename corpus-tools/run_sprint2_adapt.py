@@ -303,6 +303,15 @@ async def process_dataset(name: str, records: list[dict], max_records: int | Non
     if max_records:
         records = records[:max_records]
 
+    # Resume support: skip records already in output file
+    output_file = OUTPUT_DIR / f"adapted_{name}.jsonl"
+    already_done = 0
+    if output_file.exists():
+        already_done = sum(1 for _ in open(output_file))
+        if already_done > 0:
+            records = records[already_done:]
+            print(f"Resuming {name}: skipping {already_done} already-processed records")
+
     print(f"\n{'='*60}")
     print(f"Processing: {name} ({len(records)} records)")
     print(f"{'='*60}")
@@ -324,7 +333,8 @@ async def process_dataset(name: str, records: list[dict], max_records: int | Non
     batch_size = 20  # Process 20 at a time, write after each batch
     results = []
 
-    with open(output_file, "w") as out_f:
+    write_mode = "a" if already_done > 0 else "w"
+    with open(output_file, write_mode) as out_f:
         for batch_start in range(0, len(records), batch_size):
             batch = records[batch_start : batch_start + batch_size]
             batch_results = await asyncio.gather(*[process_one(r) for r in batch])
