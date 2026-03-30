@@ -44,14 +44,8 @@ corpus-tools/output/qc_fill_thin.jsonl
 # Training data (generated from corpus, large)
 train/data/
 
-# Copyrighted resource files (keep local only)
-resources/the-economy-2-0-microeconomics-epub.epub
-resources/Intro to Logic and Critical Thinking v2.0.pdf
-resources/Dennett - Thought Stoppers.pdf
-resources/Poster - Cognitive Biases.pdf
-resources/Poster - Logical Fallacies.pdf
-resources/rationality-and-strategic-interactions/Baumgaertner-decisiontheory.pdf
-resources/rationality-and-strategic-interactions/Dennett - The Moral First Aid Manual.pdf
+# Resource files — lecture notes, course material, copyrighted PDFs (keep local only)
+resources/
 
 # Claude Code
 .claude/
