@@ -8,13 +8,16 @@ Collaborators: Bert Baumgaertner (philosophy, logic, decision theory) and Nichol
 
 ## Project Status
 
-**Phase: Corpus Complete, Ready for QLoRA Training.** We have:
-- 28,038 training corpus records across 182 taxonomy codes (expanded from 167 via PHIL 4040 gap analysis)
-- Full QC pipeline complete: QC1-QC6 all passing, 100% Pydantic-valid
+**Phase: v1.0 Released, QLoRA Training In Progress.** We have:
+- 27,252 training corpus records across 182 taxonomy codes (expanded from 167 via PHIL 4040 gap analysis; 18 removed in QC7 + empty-text records excluded from release)
+- Full QC pipeline complete: QC1-QC7 all passing, 100% Pydantic-valid, cross-validation at 87.7%, expert review at 4.40/5
+- Published on HuggingFace (`bertybaums/good-thinking-corpus`) and GitHub (`bertybaums/good-thinking-bot`, tag v1.0), CC BY-NC-SA 4.0
 - Benchmarks for five models: gpt-oss-20b, gpt-oss-120b, Nemotron-3-Super-120b, qwen2.5:7b, qwen3.5-122b
+- QLoRA training running on HPC (SLURM job 5120916, RTX 4090, ~4,860 steps, packing disabled)
 - Nick's QLoRA adapter merging PoC in `qlora_merge/`
 - Full pipeline infrastructure for generation, adaptation, verification, and evaluation
 - Fine-tuning target: qwen2.5:7b (2.52/2.22 baseline → target 3.0+ after QLoRA)
+- **Next:** Evaluate trained model against benchmarks, upload to HuggingFace Hub, deploy on HF Spaces with Gradio interface
 
 ## Repository Structure
 
@@ -80,7 +83,7 @@ Collaborators: Bert Baumgaertner (philosophy, logic, decision theory) and Nichol
 
 ## Training Corpus Summary
 
-**28,038 records** across 182 taxonomy codes, 6 tracks:
+**27,252 records** across 182 taxonomy codes, 6 tracks:
 
 | Track | Codes | Records |
 |-------|-------|---------|
@@ -93,7 +96,7 @@ Collaborators: Bert Baumgaertner (philosophy, logic, decision theory) and Nichol
 
 Sources: 182 hand-crafted anchors, ~13K adapted from existing datasets (Jin, FOLIO, Corr2Cause, SemEval, PHIL 4040 problems), ~14K synthetic (MindRouter gpt-oss-120b + qwen3.5-400b).
 
-Quality: 100% Pydantic-valid. Mechanically verified (0 failures), cross-validated (71.7% blind agreement), expert-reviewed (4.1-4.5/5). See `reports/` for full QC history.
+Quality: 100% Pydantic-valid. Mechanically verified (0 failures), cross-validated (87.7% blind agreement), expert-reviewed (4.40/5). QC1-QC7 all complete. See `reports/` for full QC history.
 
 ## Benchmark Results (Pre-Training Baselines, 182 anchors)
 
