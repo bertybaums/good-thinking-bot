@@ -33,6 +33,16 @@ corpus-tools/output/synthetic_*.jsonl
 corpus-tools/output/flagged_*.jsonl
 corpus-tools/output/*.html
 # Note: anchors.jsonl and other hand-crafted files ARE tracked
+corpus-tools/output/release/
+corpus-tools/output/qc7_*.jsonl
+corpus-tools/output/phil4040_synthetic.jsonl
+corpus-tools/output/adapted_phil4040.jsonl
+corpus-tools/output/overnight_*.jsonl
+corpus-tools/output/fill_final_thin.jsonl
+corpus-tools/output/qc_fill_thin.jsonl
+
+# Training data (generated from corpus, large)
+train/data/
 
 # Copyrighted resource files (keep local only)
 resources/the-economy-2-0-microeconomics-epub.epub

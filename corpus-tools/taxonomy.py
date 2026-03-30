@@ -864,6 +864,36 @@ TAXONOMY: dict[str, dict] = {
         "track": "game_theory",
         "source_notes": "W8; Axelrod",
     },
+    "B6.4": {
+        "label": "Zero-sum games and minimax theorem",
+        "description": "A game where one player's gain is the other's loss. "
+        "Von Neumann's minimax theorem (1928) proves that in zero-sum games, "
+        "maximin equals minimax — vindicating the conservative maximin strategy "
+        "from decision theory.",
+        "pattern_type": "good_tool",
+        "track": "game_theory",
+        "source_notes": "W11",
+    },
+    "B6.5": {
+        "label": "Mixed strategy Nash equilibrium",
+        "description": "A Nash equilibrium in which players randomize over "
+        "strategies. Found by the indifference principle: each player's mixing "
+        "probabilities make the opponent indifferent. Counterintuitive: YOUR "
+        "mixture is determined by the OPPONENT's payoffs.",
+        "pattern_type": "good_tool",
+        "track": "game_theory",
+        "source_notes": "W11",
+    },
+    "B6.6": {
+        "label": "Dominance reasoning in games",
+        "description": "A strategy is strictly dominated if another strategy yields "
+        "strictly higher payoffs in every scenario. Iterated elimination of "
+        "dominated strategies can solve games without Nash equilibrium analysis. "
+        "Dominance implies NE, but NE does not imply dominance.",
+        "pattern_type": "good_tool",
+        "track": "game_theory",
+        "source_notes": "W9, W10",
+    },
 
     # ── B7: Coordination Games ─────────────────────────────────────────────────
 
@@ -899,6 +929,40 @@ TAXONOMY: dict[str, dict] = {
         "track": "game_theory",
         "source_notes": "W9; Lewis",
     },
+    "B7.5": {
+        "label": "Hawk-Dove game",
+        "description": "Two players contest a resource. If both escalate (Hawk), "
+        "costly conflict results. If both back down (Dove), they share. If one "
+        "Hawk meets one Dove, Hawk takes all. Unlike PD, the symmetric mixed "
+        "strategy is an ESS. Models animal conflict, market competition, and "
+        "property rights.",
+        "pattern_type": "good_tool",
+        "track": "game_theory",
+        "source_notes": "W11, W14",
+    },
+    "B7.6": {
+        "label": "Ultimatum and Trust games",
+        "description": "In the Ultimatum Game, a proposer splits a sum and a "
+        "responder accepts or rejects (destroying both shares). Backward induction "
+        "predicts minimal offers, but empirical data shows ~40% offers and frequent "
+        "rejection of low offers. The Trust Game extends this: an investor sends "
+        "money (tripled), and a trustee decides how much to return. Tests fairness "
+        "norms vs. rational self-interest.",
+        "pattern_type": "dual",
+        "track": "game_theory",
+        "source_notes": "W12, W13",
+    },
+    "B7.7": {
+        "label": "Public Goods game",
+        "description": "N players each decide how much to contribute to a shared "
+        "pool. Contributions are multiplied and split equally. Free-riding "
+        "(contributing nothing) is the dominant strategy, but universal cooperation "
+        "Pareto-dominates. Altruistic punishment — paying to penalize free-riders "
+        "— can sustain cooperation.",
+        "pattern_type": "dual",
+        "track": "game_theory",
+        "source_notes": "W13",
+    },
 
     # ── B8: Sequential Games ───────────────────────────────────────────────────
 
@@ -933,6 +997,30 @@ TAXONOMY: dict[str, dict] = {
         "pattern_type": "dual",
         "track": "game_theory",
         "source_notes": "W10",
+    },
+    "B8.5": {
+        "label": "Signaling games",
+        "description": "A sender with private information chooses an observable "
+        "action; a receiver updates beliefs and responds. In a separating "
+        "equilibrium, different types send different signals. In a pooling "
+        "equilibrium, all types send the same signal. Costly signals (Spence job "
+        "market, Zahavi handicap principle) can be credible; cheap talk may not be.",
+        "pattern_type": "good_tool",
+        "track": "game_theory",
+        "source_notes": "W12",
+    },
+    "B8.6": {
+        "label": "Commitment devices",
+        "description": "Mechanisms that bind a player to a future action, making "
+        "threats or promises credible. Types: physical (burning bridges), "
+        "contractual (penalties), reputational (public pledges), delegational "
+        "(agents with different preferences), moral (internalizing norms). "
+        "Odysseus binding himself to the mast is the canonical example. The "
+        "Paradox of Commitment: rational agents may benefit from restricting "
+        "their own future choices.",
+        "pattern_type": "dual",
+        "track": "game_theory",
+        "source_notes": "W12",
     },
 
     # ── B9: Evolutionary Game Theory ───────────────────────────────────────────
@@ -996,6 +1084,88 @@ TAXONOMY: dict[str, dict] = {
         "track": "game_theory",
         "source_notes": "W14",
     },
+    "B10.5": {
+        "label": "Folk Theorem",
+        "description": "In an infinitely repeated game, any payoff profile that "
+        "Pareto-dominates the one-shot NE can be sustained as a subgame perfect "
+        "equilibrium if players are sufficiently patient (discount factor delta "
+        "above a threshold). The threshold for Grim Trigger in PD is "
+        "delta* = (T-R)/(T-P). The Folk Theorem explains cooperation but also "
+        "predicts too many equilibria — any feasible, individually rational "
+        "outcome is sustainable.",
+        "pattern_type": "good_tool",
+        "track": "game_theory",
+        "source_notes": "W14",
+    },
+
+    # ── B13: Behavioral Game Theory ───────────────────────────────────────────
+
+    "B13.1": {
+        "label": "Level-k thinking",
+        "description": "A model of bounded strategic reasoning. Level-0 players "
+        "choose randomly or naively. Level-1 players best-respond to Level-0. "
+        "Level-2 best-responds to Level-1, and so on. Most people reason at "
+        "Level 1-2. The p-Beauty Contest (guess 2/3 of the average) is the "
+        "classic demonstration: NE is 0, but empirical guesses cluster around "
+        "22-33 (Level 1-2).",
+        "pattern_type": "good_tool",
+        "track": "game_theory",
+        "source_notes": "W13",
+    },
+    "B13.2": {
+        "label": "Social preference models",
+        "description": "Models that modify utility functions to include others' "
+        "payoffs. Fehr-Schmidt inequality aversion: agents dislike both "
+        "disadvantageous inequality (envy) and advantageous inequality (guilt), "
+        "with envy weighted more heavily. Bolton-Ockenfels ERC: agents care "
+        "about relative payoff share. Charness-Rabin: agents value social "
+        "welfare and reciprocity. These models explain Ultimatum Game rejections, "
+        "Trust Game cooperation, and Dictator Game giving.",
+        "pattern_type": "good_tool",
+        "track": "game_theory",
+        "source_notes": "W13",
+    },
+
+    # ── B15: Social Choice Theory ─────────────────────────────────────────────
+
+    "B15.1": {
+        "label": "Condorcet's Paradox",
+        "description": "Even if every individual voter has transitive preferences, "
+        "majority-rule voting can produce cyclical (intransitive) group "
+        "preferences. Three voters ranking {A, B, C} differently can yield "
+        "A > B > C > A. This is a money pump for societies — an agenda-setter "
+        "(Master of Ceremonies) who controls the order of pairwise votes can "
+        "determine the winner.",
+        "pattern_type": "bad_thinking",
+        "track": "game_theory",
+        "source_notes": "W15",
+    },
+    "B15.2": {
+        "label": "Arrow's Impossibility Theorem",
+        "description": "No voting system for three or more candidates can "
+        "simultaneously satisfy five reasonable conditions: Universal Domain "
+        "(any preferences allowed), Weak Pareto (unanimity respected), "
+        "Independence of Irrelevant Alternatives (IIA), Non-Dictatorship, and "
+        "Transitivity of social ranking. Each condition is individually "
+        "compelling; their joint impossibility is a deep structural result "
+        "about collective rationality.",
+        "pattern_type": "good_tool",
+        "track": "game_theory",
+        "source_notes": "W15",
+    },
+    "B15.3": {
+        "label": "Voting systems and strategic voting",
+        "description": "Different aggregation rules — plurality, Borda Count, "
+        "instant runoff (IRV), approval voting — each satisfy some of Arrow's "
+        "conditions but violate others. The Gibbard-Satterthwaite Theorem shows "
+        "that any non-dictatorial voting system with 3+ candidates is "
+        "manipulable: some voter can benefit by misrepresenting their "
+        "preferences. Strategic voting is rational but undermines the "
+        "informational purpose of elections.",
+        "pattern_type": "dual",
+        "track": "game_theory",
+        "source_notes": "W15",
+    },
 
     # ═══════════════════════════════════════════════════════════════════════════
     # TRACK C: MICROECONOMICS
@@ -1016,6 +1186,16 @@ TAXONOMY: dict[str, dict] = {
         "pattern_type": "good_tool",
         "track": "microeconomics",
         "source_notes": "CORE Economy 2.0 Unit 18",
+    },
+    "C1.3": {
+        "label": "Pareto efficiency",
+        "description": "An outcome is Pareto efficient if no alternative makes at "
+        "least one person better off without making anyone worse off. A Pareto "
+        "improvement makes someone better off and no one worse off. Foundational "
+        "welfare concept that applies to markets, policy, games, and social choice.",
+        "pattern_type": "good_tool",
+        "track": "microeconomics",
+        "source_notes": "W9 (PD and Pareto), W10 (NE and Pareto), W15 (Arrow's Weak Pareto)",
     },
     "C2.1": {
         "label": "Constrained optimization",

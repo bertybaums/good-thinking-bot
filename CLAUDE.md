@@ -8,11 +8,13 @@ Collaborators: Bert Baumgaertner (philosophy, logic, decision theory) and Nichol
 
 ## Project Status
 
-**Phase: Corpus Complete, Ready for LoRA Training.** We have:
-- 24,959 QC'd training corpus records across 167 taxonomy codes
-- Benchmarks for three base models (gpt-oss-20b, gpt-oss-120b, qwen3.5-122b)
+**Phase: Corpus Complete, Ready for QLoRA Training.** We have:
+- 28,038 training corpus records across 182 taxonomy codes (expanded from 167 via PHIL 4040 gap analysis)
+- Full QC pipeline complete: QC1-QC6 all passing, 100% Pydantic-valid
+- Benchmarks for five models: gpt-oss-20b, gpt-oss-120b, Nemotron-3-Super-120b, qwen2.5:7b, qwen3.5-122b
 - Nick's QLoRA adapter merging PoC in `qlora_merge/`
 - Full pipeline infrastructure for generation, adaptation, verification, and evaluation
+- Fine-tuning target: qwen2.5:7b (2.52/2.22 baseline → target 3.0+ after QLoRA)
 
 ## Repository Structure
 
@@ -26,7 +28,7 @@ Collaborators: Bert Baumgaertner (philosophy, logic, decision theory) and Nichol
 /corpus-tools/                       # Training corpus pipeline
   config.py                          # API keys (.env), endpoints, model routing
   schema.py                          # Pydantic models for corpus records
-  taxonomy.py                        # 167-code taxonomy of reasoning patterns
+  taxonomy.py                        # 182-code taxonomy of reasoning patterns
   llm_client.py                      # Unified client: Anthropic + MindRouter
   source_loader.py                   # Maps taxonomy codes to source material passages
   benchmark.py                       # Model evaluation (identify/classify/explain modes)
@@ -62,8 +64,11 @@ Collaborators: Bert Baumgaertner (philosophy, logic, decision theory) and Nichol
   benchmark-gpt-oss-120b.md         # 120b baseline (identify: 2.95, explain: 3.04)
   benchmark-qwen3.5-122b.md         # 122b baseline (identify: 3.47, explain: 3.60)
   qc1-schema-validation.md          # Schema validation: 99.6% clean
-  qc2-mechanical-verification.md    # DT/GT math: 96.6% pass
+  qc2-mechanical-verification.md    # DT/GT math: 96.6% pass (56 failures)
   qc3-expert-review.md              # Content quality: 4.1-4.5/5
+  qc5-schema-cleanup.md             # Full cleanup: 100% Pydantic-valid (24,761 records)
+  qc6-phil4040-expansion.md         # PHIL 4040 expansion: 167->182 codes, 46 adapted records
+  taxonomy-gap-analysis.md          # 40 missing concepts from PHIL 4040 lectures
 
 /notes/                              # Design documents
   qlora-weighting.md                 # QLoRA + adapter merging explainer
@@ -75,30 +80,31 @@ Collaborators: Bert Baumgaertner (philosophy, logic, decision theory) and Nichol
 
 ## Training Corpus Summary
 
-**24,959 records** across 167 taxonomy codes, 5 tracks:
+**28,038 records** across 182 taxonomy codes, 6 tracks:
 
 | Track | Codes | Records |
 |-------|-------|---------|
 | Logic & Critical Thinking (A1-A10) | 65 | ~14,000 |
 | Decision Theory (B1-B5) | 31 | ~3,500 |
-| Game Theory (B6-B10) | 18 | ~2,900 |
+| Game Theory (B6-B15) | 33 | ~5,200 |
 | Cognitive Biases (E1) | 24 | ~4,900 |
-| Microeconomics (C1-C7) | 15 | ~800 |
+| Microeconomics (C1-C7) | 16 | ~950 |
 | Dennett's Tools (D1-D2) | 14 | ~800 |
 
-Sources: 167 hand-crafted anchors, ~13K adapted from existing datasets (Jin, FOLIO, Corr2Cause, SemEval), ~12K synthetic (MindRouter gpt-oss-120b + qwen3.5-400b).
+Sources: 182 hand-crafted anchors, ~13K adapted from existing datasets (Jin, FOLIO, Corr2Cause, SemEval, PHIL 4040 problems), ~14K synthetic (MindRouter gpt-oss-120b + qwen3.5-400b).
 
-Quality: Schema-validated, mechanically verified (DT/GT math 96.6% pass), cross-validated (71.7% blind classification agreement), expert-reviewed (4.1-4.5/5).
+Quality: 100% Pydantic-valid. Mechanically verified (0 failures), cross-validated (71.7% blind agreement), expert-reviewed (4.1-4.5/5). See `reports/` for full QC history.
 
-## Benchmark Results (Pre-Training Baselines)
+## Benchmark Results (Pre-Training Baselines, 182 anchors)
 
-| Mode | gpt-oss-20b | gpt-oss-120b | qwen3.5-122b |
-|------|------------|-------------|-------------|
-| Identify | 2.62/4 | 2.95/4 | 3.47/4 |
-| Classify | 0.10/4 | 0.29/4 | 3.90/4 |
-| Explain | 2.47/4 | 3.04/4 | 3.60/4 |
+| Mode | qwen2.5:7b | gpt-oss-20b | gpt-oss-120b | Nemotron-120b | qwen3.5-122b* |
+|------|-----------|------------|-------------|--------------|--------------|
+| Identify | 2.52/4 | 2.61/4 | 3.15/4 | 3.40/4 | 3.47/4 |
+| Explain | 2.22/4 | 2.41/4 | 2.93/4 | 3.54/4 | 3.60/4 |
 
-Weakest areas across all models: Dennett tools, good_tool pattern explanation, argument structure fundamentals. These are the primary targets for LoRA fine-tuning.
+*qwen3.5-122b benchmarked on prior 167-anchor set; others on current 182-anchor set.
+
+**Fine-tuning target:** qwen2.5:7b (2.52/2.22 baseline → target 3.0+ after QLoRA). Weakest areas: Dennett tools (1.21 explain), game theory (2.16), argument structure. Nemotron-3-Super-120b (3.54 explain) could serve as distillation teacher.
 
 ## Content Tracks
 

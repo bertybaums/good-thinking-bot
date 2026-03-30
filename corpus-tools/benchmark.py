@@ -42,6 +42,8 @@ MINDROUTER_BASE_URL = "https://mindrouter.uidaho.edu/v1"
 MODEL_CONCURRENCY = {
     "openai/gpt-oss-20b": 8,
     "openai/gpt-oss-120b": 8,
+    "Nemotron-3-Super-120b": 8,
+    "qwen2.5:7b": 8,
     "qwen/qwen3.5-400b": 4,
 }
 
@@ -50,6 +52,7 @@ JUDGE_CONCURRENCY = 4
 
 OUTPUT_DIR = Path(__file__).resolve().parent / "output"
 ANCHORS_FILE = OUTPUT_DIR / "anchors.jsonl"
+ANCHORS_PHIL4040_FILE = OUTPUT_DIR / "anchors_phil4040.jsonl"
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from taxonomy import TAXONOMY
@@ -58,12 +61,15 @@ from taxonomy import TAXONOMY
 
 def load_anchors(limit: int | None = None) -> list[dict]:
     records = []
-    with open(ANCHORS_FILE) as f:
-        for line in f:
-            if line.strip():
-                records.append(json.loads(line))
-                if limit and len(records) >= limit:
-                    break
+    for anchor_file in [ANCHORS_FILE, ANCHORS_PHIL4040_FILE]:
+        if not anchor_file.exists():
+            continue
+        with open(anchor_file) as f:
+            for line in f:
+                if line.strip():
+                    records.append(json.loads(line))
+                    if limit and len(records) >= limit:
+                        return records
     return records
 
 

@@ -253,6 +253,7 @@ _BIAS_POSTER: dict[str, str] = {
 
 _DT_LECTURE_SECTIONS: dict[str, tuple[str, str | None, str | None]] = {
     # (week_file_pattern, start_pattern, end_pattern)
+    # ── Decision Theory (W1–W7, single files per week) ──────────────────────
     "B1.1": ("W1", r"Acts.*what an agent can control", r"Type 2.*Puzzle"),
     "B1.2": ("W1", r"Dominance Principle", r"Type 2.*Puzzle"),
     "B1.3": ("W2", r"Maximax.*Optimist", r"Maximin.*Pessimist"),
@@ -278,23 +279,53 @@ _DT_LECTURE_SECTIONS: dict[str, tuple[str, str | None, str | None]] = {
     "B5.3": ("W6", r"probability.*weighting|π\(p\)", None),
     "B5.5": ("W6", r"[Ff]raming", None),
     "B5.8": ("W6", r"sunk cost|Sunk Cost", None),
-    "B6.1": ("W9", r"Prisoner.s Dilemma", r"Coordination"),
-    "B7.1": ("W9", r"Stag Hunt", r"Battle of the Sexes"),
-    "B7.2": ("W9", r"Battle of the Sexes", r"Pure Coordination"),
-    "B7.3": ("W9", r"Schelling|focal point", None),
-    "B7.4": ("W9", r"Convention.*Lewis", None),
-    "B8.1": ("W10", r"Extensive Form.*Game Tree", r"III\. Backward"),
-    "B8.2": ("W10", r"Backward [Ii]nduction", r"IV\."),
-    "B8.4": ("W10", r"Centipede", None),
-    "B9.1": ("W11", r"Evolutionarily Stable", r"III\."),
-    "B9.2": ("W11", r"[Rr]eplicator [Dd]ynamics", None),
-    "B10.1": ("W12", r"Costly [Ss]ignal", None),
+    # ── Game Theory (W9–W14, multiple files per week — use specific prefixes) ─
+    # W9: PD structure and dominance
+    "B6.1": ("W9_The_Prisoners", r"Prisoner.s Dilemma.*Formal Structure", r"III\. The General Form"),
+    "B6.6": ("W9_The_Prisoners", r"Chalk Talk.*Verify the Dominance", r"3\. Pareto Efficiency"),
+    "C1.3": ("W9_The_Prisoners", r"Pareto Efficien", r"IV\. Real-World"),
+    # W9: Coordination games
+    "B7.1": ("W9_Coordination", r"Stag Hunt", r"Battle of the Sexes"),
+    "B7.2": ("W9_Coordination", r"Battle of the Sexes", r"Pure Coordination"),
+    "B7.3": ("W9_Coordination", r"Schelling|focal point", None),
+    "B7.4": ("W9_Coordination", r"Convention.*Lewis", None),
+    # W10: Nash Equilibrium, dominance vs NE
+    # (W10_Nash has the NE definition and dominance-vs-NE discussion)
+    # W10: Sequential games and backward induction
+    "B8.1": ("W10_Sequential", r"Extensive Form.*Game Tree", r"III\. Subgame Perfect"),
+    "B8.2": ("W10_Sequential", r"Backward [Ii]nduction", r"IV\. First-Mover"),
+    "B8.4": ("W10_Sequential", r"Centipede", r"II\. Why Is This a Paradox"),
+    # W11: Mixed strategies, zero-sum, Hawk-Dove
+    "B6.4": ("W11_Mixed", r"Zero-Sum Games.*Definition", r"III\. The Minimax"),
+    "B6.5": ("W11_Mixed", r"Calculating Mixed Strategy", r"V\. Chalk Talk.*Matching Pennies"),
+    "B7.5": ("W11_Mixed", r"Hawk-Dove", r"V\. Philosophical Conclusion"),
+    # W11: Evolutionary GT
+    "B9.1": ("W11_Evolutionary", r"Evolutionarily Stable", r"III\."),
+    "B9.2": ("W11_Evolutionary", r"[Rr]eplicator [Dd]ynamics", None),
+    # W12: Sequential games, commitment, signaling (new combined file)
+    "B8.5": ("W12_Sequential_Games_Backwards", r"Signaling Games", r"V\. Bridge to Week 13"),
+    "B8.6": ("W12_Sequential_Games_Backwards", r"III\. Commitment Devices", r"IV\. Signaling Games"),
+    # W12: Signaling deep-dive (old file)
+    "B10.1": ("W12_Signaling", r"Costly [Ss]ignal", None),
+    # W13: Behavioral game theory
+    "B7.6": ("W13", r"II\. The Ultimatum Game", r"III\. The Dictator Game"),
+    "B7.7": ("W13", r"Public Goods Game", r"2\. Centipede Game"),
     "B10.2": ("W13", r"Three Games That Broke", None),
-    "B10.3": ("W14", r"Commitment and Precommitment", r"II\. Commitment in Game"),
+    "B13.1": ("W13", r"Level-k Reasoning", r"II\. Social Preferences"),
+    "B13.2": ("W13", r"Fehr-Schmidt Model", r"III\. Applications and Extensions"),
+    # W14: Repeated games and folk theorem (new file)
+    "B10.5": ("W14_Repeated", r"III\. Infinitely.*Folk Theorem", r"IV\. Sustaining Cooperation"),
+    # W14: Synthesis, commitment, moral first aid (old file)
+    "B10.3": ("W14_Synthesis", r"Commitment and Precommitment", r"II\. Commitment in Game"),
+    # W15: Social choice and Arrow's theorem
+    "B15.1": ("W15", r"Condorcet.s Paradox", r"III\. Voting Systems"),
+    "B15.2": ("W15", r"V\. Arrow.s Five Conditions", r"VII\. Which Condition Fails"),
+    "B15.3": ("W15", r"III\. Voting Systems.*Can We Do Better", r"V\. Arrow.s Five Conditions"),
+    # ── Dennett's Tools (W7, single file) ───────────────────────────────────
     "D2.1": ("W7", r"III\. Satisficing", None),
     "D2.2": ("W7", r"Panglossian", None),
     "D2.3": ("W7", r"[Cc]onversation.stopper", None),
-    "D2.6": ("W14", r"Moral First Aid Manual", None),
+    "D2.6": ("W14_Synthesis", r"Moral First Aid Manual", None),
 }
 
 

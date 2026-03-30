@@ -1,0 +1,208 @@
+Loaded 167 anchors
+Subject model: qwen/qwen3.5-122b
+Judge model: qwen/qwen3.5-400b
+Mode: all
+
+--- Mode: identify ---
+  Progress: 10/167 [29s]
+  Progress: 20/167 [57s]
+  Progress: 30/167 [92s]
+  Progress: 40/167 [120s]
+  Progress: 50/167 [152s]
+  Progress: 60/167 [176s]
+  Progress: 70/167 [215s]
+  Progress: 80/167 [243s]
+  Progress: 90/167 [279s]
+  Progress: 100/167 [301s]
+  Progress: 110/167 [335s]
+  Progress: 120/167 [358s]
+  Progress: 130/167 [397s]
+  Progress: 140/167 [426s]
+  Progress: 150/167 [463s]
+  Progress: 160/167 [491s]
+
+--- Mode: classify ---
+  Progress: 10/167 [2s]
+  Progress: 20/167 [3s]
+  Progress: 30/167 [4s]
+  Progress: 40/167 [6s]
+  Progress: 50/167 [8s]
+  Progress: 60/167 [9s]
+  Progress: 70/167 [10s]
+  Progress: 80/167 [12s]
+  Progress: 90/167 [14s]
+  Progress: 100/167 [15s]
+  Progress: 110/167 [16s]
+  Progress: 120/167 [18s]
+  Progress: 130/167 [19s]
+  Progress: 140/167 [20s]
+  Progress: 150/167 [22s]
+  Progress: 160/167 [23s]
+
+--- Mode: explain ---
+  Progress: 10/167 [34s]
+  Progress: 20/167 [59s]
+  Progress: 30/167 [91s]
+  Progress: 40/167 [118s]
+  Progress: 50/167 [153s]
+  Progress: 60/167 [176s]
+  Progress: 70/167 [209s]
+  Progress: 80/167 [239s]
+  Progress: 90/167 [275s]
+  Progress: 100/167 [298s]
+  Progress: 110/167 [332s]
+  Progress: 120/167 [357s]
+  Progress: 130/167 [397s]
+  Progress: 140/167 [428s]
+  Progress: 150/167 [462s]
+  Progress: 160/167 [489s]
+
+Results saved to /Users/bbaum/Documents/claude-projects/good-thinking-bot/corpus-tools/output/benchmark_qwen-qwen3.5-122b.jsonl
+
+######################################################################
+MODE: IDENTIFY
+######################################################################
+
+======================================================================
+BENCHMARK REPORT: qwen/qwen3.5-122b
+======================================================================
+Records evaluated: 167
+Mean score: 3.47 / 4.00
+Score distribution: Counter({4: 87, 3: 72, 2: 7, 1: 1})
+
+Track                                 Mean     n    0    1    2    3    4
+----------------------------------------------------------------------
+cognitive_biases                      3.54    24    0    0    0   11   13
+decision_theory                       3.42    31    0    0    2   14   15
+dennett_tools                         3.00    14    0    0    4    6    4
+game_theory                           3.39    18    0    0    0   11    7
+logic_critical_thinking               3.58    65    0    0    1   25   39
+microeconomics                        3.47    15    0    1    0    5    9
+
+Tier              Mean     n
+------------------------------
+drill             3.56   112
+what_if           3.31    49
+puzzle            3.00     6
+
+Pattern Type      Mean     n
+------------------------------
+good_tool         3.38    65
+bad_thinking      3.61    74
+dual              3.29    28
+
+Weakest areas (score 0-1, n=1):
+  [1] C5.1: Supply, demand, equilibrium (drill)
+
+Strongest areas (score 3-4, n=159):
+  [4] A7.1: Ad hominem
+  [4] A7.2: Straw man
+  [4] E1.2: Confirmation bias
+  [4] B1.5: Minimax regret
+  [4] A7.3: Tu quoque
+  [4] A6.3: Begging the question
+  [4] A6.4: False dichotomy
+  [4] E1.3: Anchoring
+  [4] E1.20: Sunk cost fallacy (cognitive)
+  [4] E1.1: Fundamental attribution error
+
+######################################################################
+MODE: CLASSIFY
+######################################################################
+
+======================================================================
+BENCHMARK REPORT: qwen/qwen3.5-122b
+======================================================================
+Records evaluated: 167
+Mean score: 3.90 / 4.00
+Score distribution: Counter({4: 163, 0: 4})
+
+Track                                 Mean     n    0    1    2    3    4
+----------------------------------------------------------------------
+cognitive_biases                      4.00    24    0    0    0    0   24
+decision_theory                       3.74    31    2    0    0    0   29
+dennett_tools                         3.71    14    1    0    0    0   13
+game_theory                           4.00    18    0    0    0    0   18
+logic_critical_thinking               3.94    65    1    0    0    0   64
+microeconomics                        4.00    15    0    0    0    0   15
+
+Tier              Mean     n
+------------------------------
+drill             3.89   112
+what_if           3.92    49
+puzzle            4.00     6
+
+Pattern Type      Mean     n
+------------------------------
+good_tool         3.82    65
+bad_thinking      3.95    74
+dual              4.00    28
+
+Weakest areas (score 0-1, n=4):
+  [0] D2.1: Satisficing (what_if)
+  [0] B1.1: Decision matrices (drill)
+  [0] B1.2: Dominance reasoning (drill)
+  [0] A8.4: Regression to the mean (drill)
+
+Strongest areas (score 3-4, n=163):
+  [4] A7.1: Ad hominem
+  [4] A7.2: Straw man
+  [4] E1.2: Confirmation bias
+  [4] B1.5: Minimax regret
+  [4] D1.1: Rapoport's Rules
+  [4] A7.3: Tu quoque
+  [4] A7.4: Genetic fallacy
+  [4] A6.3: Begging the question
+  [4] A6.4: False dichotomy
+  [4] A8.5: Gambler's fallacy
+
+######################################################################
+MODE: EXPLAIN
+######################################################################
+
+======================================================================
+BENCHMARK REPORT: qwen/qwen3.5-122b
+======================================================================
+Records evaluated: 167
+Mean score: 3.60 / 4.00
+Score distribution: Counter({4: 123, 3: 30, 2: 9, 0: 4, 1: 1})
+
+Track                                 Mean     n    0    1    2    3    4
+----------------------------------------------------------------------
+cognitive_biases                      3.88    24    0    0    0    3   21
+decision_theory                       3.71    31    0    0    2    5   24
+dennett_tools                         2.79    14    1    0    3    7    3
+game_theory                           3.78    18    0    0    1    2   15
+logic_critical_thinking               3.54    65    3    1    1   13   47
+microeconomics                        3.73    15    0    0    2    0   13
+
+Tier              Mean     n
+------------------------------
+drill             3.62   112
+what_if           3.55    49
+puzzle            3.67     6
+
+Pattern Type      Mean     n
+------------------------------
+good_tool         3.40    65
+bad_thinking      3.73    74
+dual              3.71    28
+
+Weakest areas (score 0-1, n=5):
+  [0] D1.7: The 'surely' operator (drill)
+  [0] A9.1: Evaluative language and presupposition (drill)
+  [0] A1.2: Premises and conclusions (drill)
+  [0] A1.3: Standard form (drill)
+  [1] A9.2: Assuring, guarding, and discounting (drill)
+
+Strongest areas (score 3-4, n=153):
+  [4] A7.1: Ad hominem
+  [4] E1.2: Confirmation bias
+  [4] B1.5: Minimax regret
+  [4] A7.3: Tu quoque
+  [4] A7.4: Genetic fallacy
+  [4] A6.3: Begging the question
+  [4] A6.4: False dichotomy
+  [4] A8.5: Gambler's fallacy
+  [4] B6.1: Prisoner's Dilemma
+  [4] E1.3: Anchoring
