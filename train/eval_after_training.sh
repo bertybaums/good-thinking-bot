@@ -20,6 +20,14 @@
 
 set -e
 
+# Activate venv if not already active
+if [ -z "$VIRTUAL_ENV" ]; then
+    source /etc/profile 2>/dev/null || true
+    module load cuda/12.8 2>/dev/null || module load cuda/12.2 2>/dev/null || true
+    module load python/3.11.11 2>/dev/null || true
+    source "$HOME/ARC/venv/bin/activate"
+fi
+
 OUTPUT_DIR="${1:-outputs/gtb-qwen7b-qlora}"
 LORA_DIR="$OUTPUT_DIR/lora"
 MERGED_DIR="$OUTPUT_DIR/merged-16bit"

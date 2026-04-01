@@ -1,0 +1,5 @@
+gradio>=4.44.0,<7.0
+pydantic>=2.0
+# torch and transformers only needed when MODEL_PATH is set
+# transformers>=4.40.0
+# torch>=2.0
