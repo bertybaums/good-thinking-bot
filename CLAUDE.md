@@ -8,16 +8,16 @@ Collaborators: Bert Baumgaertner (philosophy, logic, decision theory) and Nichol
 
 ## Project Status
 
-**Phase: v1.0 Released, QLoRA Training In Progress.** We have:
+**Phase: v1.0 Released, QLoRA Training COMPLETE, Post-Training Benchmarks PASSED.** We have:
 - 27,252 training corpus records across 182 taxonomy codes (expanded from 167 via PHIL 4040 gap analysis; 18 removed in QC7 + empty-text records excluded from release)
 - Full QC pipeline complete: QC1-QC7 all passing, 100% Pydantic-valid, cross-validation at 87.7%, expert review at 4.40/5
 - Published on HuggingFace (`bertybaums/good-thinking-corpus`) and GitHub (`bertybaums/good-thinking-bot`, tag v1.0), CC BY-NC-SA 4.0
-- Benchmarks for five models: gpt-oss-20b, gpt-oss-120b, Nemotron-3-Super-120b, qwen2.5:7b, qwen3.5-122b
-- QLoRA training running on HPC (SLURM job 5120916, RTX 4090, ~4,860 steps, packing disabled)
+- Benchmarks for seven models: gpt-oss-20b, gpt-oss-120b, Nemotron-3-Super-120b, qwen2.5:7b, qwen3.5-122b, **gemma-4-26b (3.51/3.85/3.66 — new SOTA on identify+explain)**, **gemma-4-31b (3.48/3.89/3.65)**. See `reports/benchmark-gemma4.md`.
+- QLoRA training COMPLETE (SLURM 5120916, 3 epochs, 4860 steps, train_loss 0.629, eval_loss 0.602). Merged 16-bit model at `fortyfive:/mnt/ceph/bbaum/good-thinking-bot/outputs/gtb-qwen7b-qlora/`
+- **Post-training benchmark (2026-04-15): identify 3.20, explain 3.53** — beat 3.0+ target on both modes. Explain ties qwen3.5-122b, beats gpt-oss-120b. See `reports/benchmark-qwen2.5-7b-qlora.md`.
+- Judge model is now `qwen/qwen3.5-122b` (400b decommissioned)
 - Nick's QLoRA adapter merging PoC in `qlora_merge/`
-- Full pipeline infrastructure for generation, adaptation, verification, and evaluation
-- Fine-tuning target: qwen2.5:7b (2.52/2.22 baseline → target 3.0+ after QLoRA)
-- **Next:** Evaluate trained model against benchmarks, upload to HuggingFace Hub, deploy on HF Spaces with Gradio interface
+- **Next:** Upload merged model to HuggingFace Hub, deploy on HF Spaces with Gradio interface. Address weak spot: microeconomics identify (2.50, ~unchanged by training).
 
 ## Repository Structure
 
@@ -108,6 +108,8 @@ Quality: 100% Pydantic-valid. Mechanically verified (0 failures), cross-validate
 *qwen3.5-122b benchmarked on prior 167-anchor set; others on current 182-anchor set.
 
 **Fine-tuning target:** qwen2.5:7b (2.52/2.22 baseline → target 3.0+ after QLoRA). Weakest areas: Dennett tools (1.21 explain), game theory (2.16), argument structure. Nemotron-3-Super-120b (3.54 explain) could serve as distillation teacher.
+
+**Post-QLoRA result (2026-04-15): identify 3.20, explain 3.53.** Biggest gains where baseline was weakest: Dennett tools explain +2.15, game theory explain +1.59. Remaining weak spot: microeconomics identify (2.50, flat). Full breakdown in `reports/benchmark-qwen2.5-7b-qlora.md`.
 
 ## Content Tracks
 

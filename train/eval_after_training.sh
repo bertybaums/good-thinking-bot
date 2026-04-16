@@ -117,14 +117,14 @@ def generate_response(prompt, max_tokens=1024, temperature=0.3):
     response = tokenizer.decode(outputs[0][inputs.input_ids.shape[1]:], skip_special_tokens=True)
     return response
 
-# Run evaluation for identify and explain modes
+# Run evaluation for explain mode (identify already scored in prior eval)
 import openai
 
 judge_client = openai.OpenAI(api_key=MINDROUTER_API_KEY, base_url=MINDROUTER_BASE_URL)
 
 all_results = []
 
-for mode in ["identify", "explain"]:
+for mode in ["explain"]:
     print(f"\n--- Mode: {mode} ---")
     results = []
     start = time.time()
@@ -187,7 +187,7 @@ print(f"\nResults saved to {results_path}")
 print("\n" + "=" * 60)
 print("COMPARISON TO BASELINE (qwen2.5:7b pre-training)")
 print("=" * 60)
-for mode in ["identify", "explain"]:
+for mode in ["explain"]:
     mode_results = [r for r in all_results if r["mode"] == mode and r["score"] >= 0]
     if mode_results:
         mean = sum(r["score"] for r in mode_results) / len(mode_results)

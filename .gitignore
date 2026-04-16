@@ -40,6 +40,7 @@ corpus-tools/output/adapted_phil4040.jsonl
 corpus-tools/output/overnight_*.jsonl
 corpus-tools/output/fill_final_thin.jsonl
 corpus-tools/output/qc_fill_thin.jsonl
+corpus-tools/output/logs/
 
 # Training data (generated from corpus, large)
 train/data/

@@ -45,9 +45,11 @@ MODEL_CONCURRENCY = {
     "Nemotron-3-Super-120b": 8,
     "qwen2.5:7b": 8,
     "qwen/qwen3.5-400b": 4,
+    "google/gemma-4-26b": 8,
+    "google/gemma-4-31b": 8,
 }
 
-JUDGE_MODEL = "qwen/qwen3.5-400b"
+JUDGE_MODEL = "qwen/qwen3.5-122b"
 JUDGE_CONCURRENCY = 4
 
 OUTPUT_DIR = Path(__file__).resolve().parent / "output"
@@ -59,8 +61,17 @@ from taxonomy import TAXONOMY
 
 # ── Load Anchors ─────────────────────────────────────────────────────────────
 
-def load_anchors(limit: int | None = None) -> list[dict]:
+def load_anchors(limit: int | None = None, source: str | None = None) -> list[dict]:
+    """Load anchors from default anchor files, or from a custom JSONL if `source` is given."""
     records = []
+    if source:
+        with open(source) as f:
+            for line in f:
+                if line.strip():
+                    records.append(json.loads(line))
+                    if limit and len(records) >= limit:
+                        return records
+        return records
     for anchor_file in [ANCHORS_FILE, ANCHORS_PHIL4040_FILE]:
         if not anchor_file.exists():
             continue
@@ -369,7 +380,7 @@ def load_report(path: Path) -> list[dict]:
 # ── Main ─────────────────────────────────────────────────────────────────────
 
 async def main_async(args):
-    anchors = load_anchors(args.limit)
+    anchors = load_anchors(args.limit, source=args.anchors)
     print(f"Loaded {len(anchors)} anchors")
     print(f"Subject model: {args.subject}")
     print(f"Judge model: {JUDGE_MODEL}")
@@ -406,6 +417,7 @@ def main():
     parser.add_argument("--mode", default="identify", choices=["identify", "classify", "explain", "all"],
                         help="Evaluation mode")
     parser.add_argument("--limit", type=int, help="Limit number of anchors to evaluate")
+    parser.add_argument("--anchors", help="Path to alternative anchor JSONL (e.g. output/quick_benchmark_set.jsonl)")
     parser.add_argument("--report", help="Load and display a saved benchmark report")
     args = parser.parse_args()
 
