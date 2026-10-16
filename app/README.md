@@ -24,7 +24,7 @@ tags:
 
 Interactive critical thinking tutor that teaches logic, decision theory, game theory, and economics through scenario-based practice with NPC characters.
 
-**Authors:** Bert Baumgaertner & Nicholas Potter, University of Idaho
+**Authors:** Bert Baumgaertner (University of Idaho) & Nicholas A. Potter (Economic Research Service, USDA)
 
 ## Features
 

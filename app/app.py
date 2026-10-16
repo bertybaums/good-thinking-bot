@@ -12,7 +12,7 @@ Two modes:
   - Model mode: Loads a fine-tuned model for real-time evaluation.
     Activated by setting MODEL_PATH environment variable.
 
-Authors: Bert Baumgaertner & Nicholas Potter, University of Idaho
+Authors: Bert Baumgaertner (University of Idaho) & Nicholas A. Potter (Economic Research Service, USDA)
 License: CC BY-NC-SA 4.0
 """
 
@@ -478,7 +478,7 @@ blind agreement and expert review at 4.40/5).</p>
 @dataset{baumgaertner2026goodthinking,
   title     = {Good Thinking Corpus: Training Data for Critical Thinking,
                Logic, Decision Theory, and Economics},
-  author    = {Baumgaertner, Bert and Potter, Nicholas},
+  author    = {Baumgaertner, Bert and Potter, Nicholas A.},
   year      = {2026},
   publisher = {HuggingFace / Zenodo},
   doi       = {10.5281/zenodo.19324917},
@@ -488,9 +488,8 @@ blind agreement and expert review at 4.40/5).</p>
 </pre>
 
 <h3 style="color:#333;">Credits</h3>
-<p><strong>Bert Baumgaertner</strong> — Philosophy, logic, decision theory<br>
-<strong>Nicholas Potter</strong> — Economics, game design<br>
-University of Idaho</p>
+<p><strong>Bert Baumgaertner</strong> — Philosophy, logic, decision theory; University of Idaho<br>
+<strong>Nicholas A. Potter</strong> — Economics, game design; Economic Research Service, USDA</p>
 
 <p style="color:#999; font-size:0.85em; margin-top:20px;">
 This app is running in corpus-only mode: it presents scenarios from the

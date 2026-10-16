@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this corpus or code, please cite it as below."
+title: "Good Thinking Corpus v1.0: A Training Dataset for Critical Thinking, Logic, and Decision Theory Education"
+type: dataset
+authors:
+  - family-names: Baumgaertner
+    given-names: Bert
+    affiliation: "Department of Philosophy, University of Idaho"
+  - family-names: Potter
+    given-names: Nicholas A.
+    affiliation: "Economic Research Service, USDA"
+version: "1.0"
+date-released: "2026-03-29"
+doi: 10.5281/zenodo.19324917
+license: CC-BY-NC-SA-4.0
+url: "https://huggingface.co/datasets/bertybaums/good-thinking-corpus"
+repository-code: "https://github.com/bertybaums/good-thinking-bot"

@@ -234,7 +234,7 @@ good-thinking-bot/
 @dataset{baumgaertner2026goodthinking,
   title     = {Good Thinking Corpus v1.0: A Training Dataset for Critical
                Thinking, Logic, and Decision Theory Education},
-  author    = {Baumgaertner, Bert and Potter, Nicholas},
+  author    = {Baumgaertner, Bert and Potter, Nicholas A.},
   year      = {2026},
   publisher = {HuggingFace / Zenodo},
   doi       = {10.5281/zenodo.19324917},
@@ -252,7 +252,7 @@ Adapted records draw on source datasets with their own licenses (see [Data Sourc
 ## Authors
 
 - **Bert Baumgaertner** -- Department of Philosophy, University of Idaho
-- **Nicholas Potter** -- Department of Agricultural Economics and Rural Sociology, University of Idaho
+- **Nicholas A. Potter** -- Economic Research Service, USDA
 
 ## Acknowledgments
 
